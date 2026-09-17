@@ -1,0 +1,195 @@
+PORTFOLIO — DESIGN RULES (current / live state)
+====================================================
+Theme: "OFF-WHITE / DECONSTRUCTED INDUSTRIAL"
+Last reconciled to the live code on 2026-08-12.
+
+This doc is a factual inventory of the tokens, type, and component patterns
+actually in the codebase right now — NOT an aspiration. The prior version of
+this file described a sky-blue (#0EA5E9) + amber "Snowflake" theme; that theme
+was fully removed and no longer appears anywhere in src/ (0 occurrences of
+#0EA5E9, 0 of amber-*). If you see those, they are dead references.
+
+Source of truth for tokens: src/styles/theme.css (CSS variables) and
+src/styles/fonts.css (font loading). Most components use HARDCODED hex values
+that mirror the variables — see §1 for the mapping.
+
+
+────────────────────────────────────────────────────
+1. COLOR TOKENS (CSS vars in theme.css; hardcoded hexes in components)
+────────────────────────────────────────────────────
+
+Defined as CSS variables on :root in src/styles/theme.css. Components mostly
+reference the raw hex via Tailwind arbitrary values (e.g. text-[#6B5D44]),
+so a re-theme means either editing the vars AND sweeping the hexes, or
+migrating components to bg-[var(--accent)] form.
+
+  VAR            HEX        ROLE                                    ~USES (.tsx)
+  --bone         #F5F2EC    page background, off-white; on-dark text    3+
+  --wash         #EBE6DC    alt section bg, warm taupe wash             70
+  --band         #B8A689    decorative taupe band / chip bg             1
+  --ink          #0A0A0A    headings, primary dark CTA/badge bg        178
+  --body-text    #3F3F3F    body copy (AA on bone)                     171
+  --muted-text   #6B6B6B    meta / labels (AA Large on bone)           53
+  (unnamed)      #8A8A8A    lighter muted (scroll hint, eyebrows)      23
+  --rule         #D6CFC2    hairline rules, card/badge borders         116
+  --accent       #6B5D44    links, accent text, primary CTA bg         204
+  --accent-hover #4A3F2D    accent/CTA hover                           13
+
+ACCENT = deep taupe #6B5D44. This is the primary interactive color (links,
+CTA fills, focus/hover, accent dots, highlighted words in headlines).
+INK #0A0A0A is the second "brand" fill — used for dark badges and dark CTAs.
+
+There is NO secondary "achievement/amber" color anymore. Award/"won" callouts
+use the INK badge pattern (§4 BADGES), not a colored trophy chip.
+
+shadcn/ui token mapping lives in the same file (--primary=ink,
+--secondary=wash, --ring=accent, --destructive=#B91C1C, etc.) under both
+:root and the `@theme inline` block. Radius token: --radius: 0.25rem.
+
+
+────────────────────────────────────────────────────
+2. GRADIENTS (sparse — the industrial look is mostly flat)
+────────────────────────────────────────────────────
+
+Only three gradient patterns are in use. This theme favors FLAT taupe fills
+and hard 1px rules over sweeps.
+
+  Section fade (8×, most common):   bg-gradient-to-b from-[#EBE6DC] to-white
+  Hero (inverted):                  bg-gradient-to-b from-white to-[#EBE6DC]
+  Image hover scrim:                bg-gradient-to-t from-black/50 to-transparent
+                                    (opacity-0 group-hover:opacity-100)
+
+For a hard-edged alternative to a gradient banner, use the .industrial-band
+utility (theme.css): flat --wash fill with top/bottom --rule borders.
+
+
+────────────────────────────────────────────────────
+3. TYPOGRAPHY
+────────────────────────────────────────────────────
+
+FONTS (loaded via Google Fonts in src/styles/fonts.css):
+  Body / headings:  'Space Grotesk'  (fallback 'Inter', system sans)
+  Mono spec labels: 'JetBrains Mono' (via .font-spec utility + skip link)
+  Inter is loaded as the fallback weight source (300–900).
+
+HEADINGS ARE BOLD (this is the opposite of the old doc's "no font-bold" rule).
+Set globally in theme.css @layer base:
+  h1, h2 → font-weight 700, letter-spacing -0.02em, line-height 1.05
+  h3     → font-weight 600, letter-spacing -0.015em, line-height 1.2
+  h4     → font-weight 600, letter-spacing -0.01em, line-height 1.3
+Default sizes: h1=text-2xl, h2=text-xl, h3=text-lg, h4=text-base
+  (Tailwind size utilities on the element still override these.)
+The hero H1 explicitly scales up: text-4xl → lg:text-7xl, font-bold.
+
+MONO SPEC LABELS — the signature "deconstructed / spec-sheet" accent.
+  .font-spec  → JetBrains Mono, font-feature-settings ss01/ss02 on
+  Almost always paired with: uppercase + tracking-[0.18em]/tracking-wider
+  Used in: award badge, section eyebrows, case-study meta labels.
+  Present in AboutSection, Hero, Resume, Process, and every CaseStudy* page.
+  .spec-bracket → wraps a label in dimmed [ ] brackets (::before / ::after).
+
+SMALL EYEBROW LABELS above sections/headlines:
+  text-xs sm:text-sm uppercase tracking-wider, in #8A8A8A or via .font-spec.
+
+
+────────────────────────────────────────────────────
+4. COMPONENT PATTERNS
+────────────────────────────────────────────────────
+
+RADIUS SCALE — tight. --radius is 0.25rem. Live usage counts:
+  rounded-lg  (107) — cards, panels, image frames (default surface radius)
+  rounded-full (54) — dots, carousel arrows/indicators, avatars ONLY
+  rounded-md  (42) — buttons, secondary links, small chips
+  rounded-sm  (14), rounded-xl (7), rounded-r-lg (3), rounded-none (1)
+  RULE OF THUMB: content surfaces are rounded-lg; pill/round-full is reserved
+  for genuinely circular UI (dots, icon buttons, avatars). Do NOT wrap text
+  chips/badges in rounded-full — that reads as generic. Badges are square
+  (see below).
+
+BUTTONS (primary CTA)
+  Taupe fill:  bg-[#6B5D44] hover:bg-[#4A3F2D] text-white
+  size="lg" hero CTA padding: px-6 sm:px-8 py-5 sm:py-6, text-base sm:text-lg
+  Secondary/outline CTA: border border-[#D6CFC2] bg-white/60 text-[#3F3F3F]
+    hover:border-[#6B5D44] hover:text-[#6B5D44], rounded-md
+  Dark CTA variant uses --ink #0A0A0A fill where a heavier weight is wanted.
+
+BADGES  (square corners — NOT pills)
+  Award / "won" — two accepted fills, both square + .font-spec uppercase
+    + <Trophy> lucide icon:
+      Ink chip (compact, on-image/inline): bg-[#0A0A0A] text-[#F5F2EC]
+        px-3 py-1 text-xs tracking-[0.18em]  (AboutSection.tsx)
+      Brown CTA-badge (standalone, needs to read at a glance): bg-[#6B5D44]
+        text-white hover:bg-[#4A3F2D] px-4 py-2 text-sm sm:text-base
+        tracking-[0.12em]  (Hero award badge → links to the case study)
+    Prefer the brown variant when the badge stands alone on a light bg; the
+    ink-on-bone chip is small and low-contrast at hero scale.
+  Card corner tag: <Badge> bg-[#0A0A0A] text-white shadow-md (FeaturedProjects)
+
+CARDS
+  bg-white border border-[#D6CFC2] rounded-lg overflow-hidden
+  + hover:shadow-xl transition-shadow on clickable cards
+
+CAROUSEL CONTROLS (AboutSection)
+  Arrow buttons: h-10 w-10 rounded-full bg-white/90 hover:bg-white shadow-md
+    border border-[#D6CFC2] text-[#3F3F3F] hover:text-[#6B5D44]
+    focus-visible:ring-2 focus-visible:ring-[#6B5D44]
+  Dot indicators: h-2 rounded-full; inactive gray, active extends to a pill
+    in the accent color.
+
+ACCENT DOT
+  Small filled circle: inline-block w-2 h-2 rounded-full bg-[#6B5D44]
+
+NAV / CHROME (Navigation.tsx)
+  Fixed top: bg-white/80 backdrop-blur-md border-b border-[#D6CFC2], h-16
+  Brand: "Ivan Gonzalez | Product Manager & Developer"
+  Links: text-[#3F3F3F] hover:text-[#6B5D44]; active: text-[#6B5D44]
+  Resume link is an outlined chip: border border-[#D6CFC2] px-4 py-1.5
+    rounded-lg hover:border-[#6B5D44]
+
+FOCUS / A11Y (theme.css)
+  :focus-visible → 2px solid --ink, offset 2px
+  .skip-to-content → JetBrains Mono uppercase, ink bg / bone text
+  prefers-reduced-motion honored globally (animations clamped to 0.01ms)
+
+
+────────────────────────────────────────────────────
+5. LAYOUT INVARIANTS
+────────────────────────────────────────────────────
+
+- Global container: max-w-7xl mx-auto px-4 sm:px-6 lg:px-8
+  (Hero content block uses max-w-5xl.)
+- Section alternation: white ↔ #EBE6DC/gradient bands
+- Card/panel radius: rounded-lg; banners rounded-xl
+- Aspect ratios: aspect-video / aspect-[16/9] / aspect-[4/3] / aspect-square
+- Image "fit" rule: letterbox with object-contain against a light surface
+  rather than object-cover crop, when aspect mismatches the frame.
+
+
+────────────────────────────────────────────────────
+6. KNOWN DEAD CODE / CLEANUP NOTES
+────────────────────────────────────────────────────
+
+- @keyframes ticker (src/styles/tailwind.css) is now UNUSED. The homepage
+  "BREAKING NEWS" ticker was removed from Hero.tsx; the award moved to a
+  static INK badge in the hero. Safe to delete the keyframe.
+- Anything referencing #0EA5E9, #0284C7, or amber-* is stale from the prior
+  theme and should not be reintroduced.
+
+
+────────────────────────────────────────────────────
+7. RE-THEME STRATEGY
+────────────────────────────────────────────────────
+
+Fastest safe path for the next palette change:
+(a) Edit the CSS variables in src/styles/theme.css (--accent, --accent-hover,
+    --bone, --wash, --ink, --rule, --body-text, --muted-text, --band).
+(b) Sweep the hardcoded hexes in components to match (they do not yet all
+    reference the vars). Highest-frequency hexes to sweep:
+      #6B5D44 (204), #0A0A0A (178), #3F3F3F (171), #D6CFC2 (116),
+      #EBE6DC (70), #6B6B6B (53), #8A8A8A (23), #4A3F2D (13).
+    HIGH-LEVERAGE: migrate components to bg-[var(--accent)] etc. once, so the
+    next re-theme is a one-file change in theme.css.
+(c) Swap fonts in src/styles/fonts.css + the body/`.font-spec` stacks in
+    theme.css if changing type.
+(d) Keep the tight --radius (0.25rem) and square badges — they are core to
+    the industrial identity.
