@@ -9,7 +9,7 @@ export function Footer() {
           <h2 className="text-2xl sm:text-3xl mb-2">
             Let's Build Something
           </h2>
-          <p className="text-[#8A8A8A] mb-5 max-w-xl mx-auto text-sm sm:text-base">
+          <p className="text-[#565656] mb-5 max-w-xl mx-auto text-sm sm:text-base">
             Ready to transform your ideas into validated proof of concepts?
             Let's collaborate on your next innovation.
           </p>

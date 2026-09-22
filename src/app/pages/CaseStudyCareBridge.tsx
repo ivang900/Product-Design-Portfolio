@@ -61,7 +61,7 @@ function SketchCarousel() {
           type="button"
           onClick={prev}
           aria-label="Previous sketch"
-          className="absolute left-2 top-1/2 -translate-y-1/2 h-9 w-9 rounded-full bg-white/90 hover:bg-white shadow-md border border-[#D6CFC2] flex items-center justify-center text-[#3F3F3F] hover:text-[#6B5D44] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#6B5D44] transition"
+          className="absolute left-2 top-1/2 -translate-y-1/2 h-9 w-9 rounded-full bg-white/90 hover:bg-white shadow-md border border-[#D6CFC2] flex items-center justify-center text-[#242424] hover:text-[#6B5D44] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#6B5D44] transition"
         >
           <ChevronLeft className="h-5 w-5" />
         </button>
@@ -69,7 +69,7 @@ function SketchCarousel() {
           type="button"
           onClick={next}
           aria-label="Next sketch"
-          className="absolute right-2 top-1/2 -translate-y-1/2 h-9 w-9 rounded-full bg-white/90 hover:bg-white shadow-md border border-[#D6CFC2] flex items-center justify-center text-[#3F3F3F] hover:text-[#6B5D44] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#6B5D44] transition"
+          className="absolute right-2 top-1/2 -translate-y-1/2 h-9 w-9 rounded-full bg-white/90 hover:bg-white shadow-md border border-[#D6CFC2] flex items-center justify-center text-[#242424] hover:text-[#6B5D44] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#6B5D44] transition"
         >
           <ChevronRight className="h-5 w-5" />
         </button>
@@ -87,13 +87,13 @@ function SketchCarousel() {
                 className={`h-2 rounded-full transition-all ${
                   idx === i
                     ? "w-5 bg-[#6B5D44]"
-                    : "w-2 bg-[#D6CFC2] hover:bg-[#8A8A8A]"
+                    : "w-2 bg-[#D6CFC2] hover:bg-[#565656]"
                 }`}
               />
             ))}
           </div>
         </div>
-        <p className="text-sm text-[#3F3F3F]">{slide.caption}</p>
+        <p className="text-sm text-[#242424]">{slide.caption}</p>
       </div>
     </div>
   );
@@ -109,7 +109,7 @@ function ImagePlaceholder({
 }) {
   return (
     <div
-      className={`w-full ${aspect} bg-[#EBE6DC] border-2 border-dashed border-[#D6CFC2] rounded-lg flex flex-col items-center justify-center text-[#8A8A8A]`}
+      className={`w-full ${aspect} bg-[#EBE6DC] border-2 border-dashed border-[#D6CFC2] rounded-lg flex flex-col items-center justify-center text-[#565656]`}
     >
       <ImageIcon className="h-8 w-8 mb-2" />
       <span className="text-sm">{label}</span>
@@ -126,7 +126,7 @@ export default function CaseStudyCareBridge() {
           <div className="flex justify-between items-center h-16">
             <Link
               to="/"
-              className="flex items-center text-sm text-[#3F3F3F] hover:text-[#6B5D44] transition-colors"
+              className="flex items-center text-sm text-[#242424] hover:text-[#6B5D44] transition-colors"
             >
               <ArrowLeft className="h-4 w-4 mr-2" />
               Back to Portfolio
@@ -153,7 +153,7 @@ export default function CaseStudyCareBridge() {
                 <h1 className="text-4xl sm:text-5xl text-[#0A0A0A] mb-6">
                   CareBridge: From Discharge Plan to Recovery Plan
                 </h1>
-                <p className="text-xl text-[#3F3F3F] mb-8">
+                <p className="text-xl text-[#242424] mb-8">
                   &ldquo;A high-risk transition made safe and easy.&rdquo; A mobile-first
                   companion that turns complex hospital discharge paperwork into
                   clear, plain-language guidance for caregivers — covering
@@ -162,20 +162,20 @@ export default function CaseStudyCareBridge() {
                 </p>
                 <div className="flex flex-wrap gap-4 sm:gap-6">
                   <div>
-                    <div className="text-sm text-[#6B6B6B] mb-1">Role</div>
+                    <div className="text-sm text-[#454545] mb-1">Role</div>
                     <div className="text-[#0A0A0A]">
                       Ivan Gonzalez: Design — UI/UX
                     </div>
                   </div>
                   <div>
-                    <div className="text-sm text-[#6B6B6B] mb-1">Event</div>
+                    <div className="text-sm text-[#454545] mb-1">Event</div>
                     <div className="text-[#0A0A0A]">
                       CHOC Research Pediatric &amp; Lifespan Data Science
                       Conference Hackathon
                     </div>
                   </div>
                   <div>
-                    <div className="text-sm text-[#6B6B6B] mb-1">Outcome</div>
+                    <div className="text-sm text-[#454545] mb-1">Outcome</div>
                     <div className="text-[#0A0A0A]">Winning Team 🏆</div>
                   </div>
                 </div>
@@ -204,14 +204,14 @@ export default function CaseStudyCareBridge() {
                 <h3 className="text-xl text-[#0A0A0A] mb-4">
                   High-Level Description
                 </h3>
-                <p className="text-[#3F3F3F] mb-4">
+                <p className="text-[#242424] mb-4">
                   CareBridge is a web/mobile application that converts hospital
                   discharge plans into clear, plain-language guidance for
                   caregivers — helping families stay connected and on track
                   with recovery plans, medications, follow-up appointments, and
                   warning signs.
                 </p>
-                <p className="text-[#3F3F3F]">
+                <p className="text-[#242424]">
                   When medical needs may impair recovery, the app also surfaces
                   essential community resources: transportation, housing, food,
                   and other social supports.
@@ -222,12 +222,12 @@ export default function CaseStudyCareBridge() {
                 <h3 className="text-xl text-[#0A0A0A] mb-4">
                   Why This Matters
                 </h3>
-                <p className="text-[#3F3F3F] mb-3">
+                <p className="text-[#242424] mb-3">
                   Discharge is a high-risk transition. Patients and caregivers
                   often <strong>cannot recall or understand</strong> the
                   information conveyed at discharge.
                 </p>
-                <p className="text-[#3F3F3F]">
+                <p className="text-[#242424]">
                   This problem is worsened when patients have limited health
                   literacy, or cannot respond to even simple instructions due
                   to cognitive impairment. CareBridge meets families where they
@@ -249,7 +249,7 @@ export default function CaseStudyCareBridge() {
               <h2 className="text-3xl text-[#0A0A0A] mb-4">
                 Meet Maria — The Overwhelmed Caregiver
               </h2>
-              <p className="text-[#3F3F3F] max-w-2xl mx-auto">
+              <p className="text-[#242424] max-w-2xl mx-auto">
                 Every design decision was tested against one question: &ldquo;Would
                 Maria understand this?&rdquo;
               </p>
@@ -269,10 +269,10 @@ export default function CaseStudyCareBridge() {
                   <h3 className="text-xl text-[#0A0A0A] mb-1">
                     Maria Rodriguez
                   </h3>
-                  <p className="text-sm text-[#6B6B6B] mb-4">
+                  <p className="text-sm text-[#454545] mb-4">
                     34 · Single mother of two · Urban
                   </p>
-                  <ul className="text-sm text-[#3F3F3F] space-y-2">
+                  <ul className="text-sm text-[#242424] space-y-2">
                     <li>
                       <strong>Language:</strong> Spanish primary, English second
                     </li>
@@ -296,7 +296,7 @@ export default function CaseStudyCareBridge() {
                   <h4 className="text-sm uppercase tracking-[0.18em] font-spec text-[#6B5D44] mb-3">
                     The Scenario
                   </h4>
-                  <p className="text-[#3F3F3F] text-sm">
+                  <p className="text-[#242424] text-sm">
                     Maria&rsquo;s mother was just discharged after heart surgery.
                     She has 15 pages of medical jargon, verbal instructions she
                     can&rsquo;t fully recall (research shows caregivers forget
@@ -310,7 +310,7 @@ export default function CaseStudyCareBridge() {
                   <h4 className="text-sm uppercase tracking-[0.18em] font-spec text-[#6B5D44] mb-3">
                     Key Pain Points
                   </h4>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-[#3F3F3F]">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-[#242424]">
                     <div className="flex items-start">
                       <CheckCircle2 className="h-4 w-4 text-[#6B5D44] mr-2 mt-0.5 flex-shrink-0" />
                       Medical information overload
@@ -339,14 +339,14 @@ export default function CaseStudyCareBridge() {
                 </div>
 
                 <blockquote className="bg-[#6B5D44]/5 border-l-4 border-[#6B5D44] p-6 rounded-r-lg">
-                  <p className="text-[#3F3F3F] italic mb-3">
+                  <p className="text-[#242424] italic mb-3">
                     &ldquo;I&rsquo;m so scared I&rsquo;m going to mess something up. The
                     hospital gave me all these papers, but I don&rsquo;t understand
                     half of what they say. I just want to know: what do I give
                     her, when do I give it, and how do I know if something&rsquo;s
                     wrong?&rdquo;
                   </p>
-                  <footer className="text-sm text-[#6B6B6B]">
+                  <footer className="text-sm text-[#454545]">
                     — Maria Rodriguez
                   </footer>
                 </blockquote>
@@ -363,7 +363,7 @@ export default function CaseStudyCareBridge() {
                   <div className="font-medium text-[#0A0A0A] mb-1">
                     Mobile-first
                   </div>
-                  <div className="text-[#3F3F3F]">
+                  <div className="text-[#242424]">
                     Works on smartphones with limited data plans.
                   </div>
                 </div>
@@ -371,7 +371,7 @@ export default function CaseStudyCareBridge() {
                   <div className="font-medium text-[#0A0A0A] mb-1">
                     Visual over text
                   </div>
-                  <div className="text-[#3F3F3F]">
+                  <div className="text-[#242424]">
                     Icons, color-coding, and images replace dense copy.
                   </div>
                 </div>
@@ -379,7 +379,7 @@ export default function CaseStudyCareBridge() {
                   <div className="font-medium text-[#0A0A0A] mb-1">
                     Plain language
                   </div>
-                  <div className="text-[#3F3F3F]">
+                  <div className="text-[#242424]">
                     6th-grade reading level, no medical jargon.
                   </div>
                 </div>
@@ -387,7 +387,7 @@ export default function CaseStudyCareBridge() {
                   <div className="font-medium text-[#0A0A0A] mb-1">
                     Bilingual
                   </div>
-                  <div className="text-[#3F3F3F]">
+                  <div className="text-[#242424]">
                     Easy switching between Spanish and English.
                   </div>
                 </div>
@@ -402,7 +402,7 @@ export default function CaseStudyCareBridge() {
             <h2 className="text-3xl text-[#0A0A0A] mb-4 text-center">
               Process &amp; Prototypes
             </h2>
-            <p className="text-center text-[#3F3F3F] mb-12 max-w-2xl mx-auto">
+            <p className="text-center text-[#242424] mb-12 max-w-2xl mx-auto">
               From sketches to a working prototype — shipped in a 7-hour build
               window with a multi-disciplinary team.
             </p>
@@ -420,7 +420,7 @@ export default function CaseStudyCareBridge() {
                 </div>
                 <div className="p-6">
                   <h4 className="text-[#0A0A0A] mb-2">Figma Editing</h4>
-                  <p className="text-sm text-[#3F3F3F]">
+                  <p className="text-sm text-[#242424]">
                     Fine tuning design on Figma Make.
                   </p>
                 </div>
@@ -437,7 +437,7 @@ export default function CaseStudyCareBridge() {
                 <h3 className="text-2xl text-[#0A0A0A] mb-3">
                   Parallelize, Then Merge
                 </h3>
-                <p className="text-[#3F3F3F] max-w-2xl mx-auto">
+                <p className="text-[#242424] max-w-2xl mx-auto">
                   How a calculated bet about AI-generated UIs let four
                   designers ship one cohesive product in seven hours.
                 </p>
@@ -453,7 +453,7 @@ export default function CaseStudyCareBridge() {
                     <h4 className="text-lg text-[#0A0A0A] mb-2">
                       The 7-hour bet
                     </h4>
-                    <p className="text-[#3F3F3F]">
+                    <p className="text-[#242424]">
                       Claude Code-generated UIs converge on similar layouts and
                       conventions. I bet that letting all four of us design{" "}
                       <strong>in parallel</strong> would produce variants
@@ -499,7 +499,7 @@ export default function CaseStudyCareBridge() {
                     <div className="text-sm uppercase tracking-[0.18em] font-spec text-[#6B5D44] mb-1">
                       {step}
                     </div>
-                    <p className="text-sm text-[#3F3F3F]">{body}</p>
+                    <p className="text-sm text-[#242424]">{body}</p>
                   </div>
                 ))}
               </div>
@@ -511,7 +511,7 @@ export default function CaseStudyCareBridge() {
                     <h4 className="text-xl text-[#0A0A0A]">
                       The Merge Plan
                     </h4>
-                    <p className="text-sm text-[#3F3F3F] mt-1">
+                    <p className="text-sm text-[#242424] mt-1">
                       Eight edits applied to <code className="text-xs bg-[#EBE6DC] px-1.5 py-0.5 rounded">discharge-planner</code> (base), sourced from teammates&rsquo; branches.
                     </p>
                   </div>
@@ -584,9 +584,9 @@ export default function CaseStudyCareBridge() {
                                 key={s}
                                 className={`text-[11px] px-2 py-0.5 rounded-full border ${
                                   s === "new"
-                                    ? "bg-[#EBE6DC] border-[#D6CFC2] text-[#3F3F3F]"
+                                    ? "bg-[#EBE6DC] border-[#D6CFC2] text-[#242424]"
                                     : s === "base"
-                                      ? "bg-[#EBE6DC] border-[#D6CFC2] text-[#3F3F3F]"
+                                      ? "bg-[#EBE6DC] border-[#D6CFC2] text-[#242424]"
                                       : "bg-[#6B5D44]/10 border-[#6B5D44]/30 text-[#4A3F2D]"
                                 }`}
                               >
@@ -595,7 +595,7 @@ export default function CaseStudyCareBridge() {
                             ))}
                           </div>
                         </div>
-                        <p className="text-sm text-[#3F3F3F]">{item.body}</p>
+                        <p className="text-sm text-[#242424]">{item.body}</p>
                       </div>
                     </li>
                   ))}
@@ -610,7 +610,7 @@ export default function CaseStudyCareBridge() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <Trophy className="h-12 w-12 text-[#0A0A0A] mx-auto mb-4" />
             <h2 className="text-3xl text-[#0A0A0A] mb-4">Outcome</h2>
-            <p className="text-xl text-[#3F3F3F] max-w-2xl mx-auto mb-8">
+            <p className="text-xl text-[#242424] max-w-2xl mx-auto mb-8">
               Our team won the CHOC Research Pediatric &amp; Lifespan Data
               Science Conference Hackathon.
             </p>
@@ -627,7 +627,7 @@ export default function CaseStudyCareBridge() {
                   aria-label="CareBridge product demo"
                 />
               </div>
-              <p className="text-sm text-[#6B6B6B] mt-3">
+              <p className="text-sm text-[#454545] mt-3">
                 Live walkthrough of the CareBridge prototype.
               </p>
             </div>
@@ -642,7 +642,7 @@ export default function CaseStudyCareBridge() {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
               <div className="bg-[#EBE6DC] p-6 rounded-lg border border-[#D6CFC2]">
-                <div className="flex items-center text-sm text-[#6B6B6B] mb-3">
+                <div className="flex items-center text-sm text-[#454545] mb-3">
                   <Palette className="h-4 w-4 mr-2" />
                   Design
                 </div>
@@ -653,7 +653,7 @@ export default function CaseStudyCareBridge() {
                 </div>
               </div>
               <div className="bg-[#EBE6DC] p-6 rounded-lg border border-[#D6CFC2]">
-                <div className="flex items-center text-sm text-[#6B6B6B] mb-3">
+                <div className="flex items-center text-sm text-[#454545] mb-3">
                   <Code2 className="h-4 w-4 mr-2" />
                   Development
                 </div>
@@ -663,7 +663,7 @@ export default function CaseStudyCareBridge() {
                 </div>
               </div>
               <div className="bg-[#EBE6DC] p-6 rounded-lg border border-[#D6CFC2]">
-                <div className="flex items-center text-sm text-[#6B6B6B] mb-3">
+                <div className="flex items-center text-sm text-[#454545] mb-3">
                   <Brain className="h-4 w-4 mr-2" />
                   AI Tooling
                 </div>

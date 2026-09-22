@@ -8,7 +8,7 @@ import teenHealthCoachImage from "../../assets/0fff3c3953f226b7410952ac7b3fba41d
 import nexusDashboardImage from "../../assets/73d84cc564eda8a3adc0efffb2726d2808f2aacc.png";
 import codecClubImage from "../../assets/codec-club-hub.png";
 import careBridgeImage from "../../assets/carebridge-cover.png";
-import ocvibeImage from "../../assets/OCVIBE/ocvibelogo.png";
+import aiCoreCover from "../../assets/aicore/landing-v3-final.png";
 
 interface Project {
   id: string;
@@ -20,27 +20,20 @@ interface Project {
 
 const projects: Project[] = [
   {
-    id: "ocvibe-internship",
-    title: "OCVIBE",
-    description: "",
-    image: ocvibeImage,
-    tags: ["Internship in progress"],
+    id: "ai-core",
+    title: "AI Core",
+    description:
+      "Product owner and designer for AI Core, an internal AI platform live in production. I redesigned the UI by sketching screens on paper, then iterating assisted by the Claude Code CLI, leveraging React to redesign the existing screens against patterns people already know from ChatGPT and Claude.",
+    image: aiCoreCover,
+    tags: ["AI in my process", "UI/UX Design", "Hand Wireframing", "React", "Claude Code", "Internship in progress"],
   },
   {
-    id: "codec-club-hub",
-    title: "Codec Club Hub",
+    id: "choc-hackathon",
+    title: "CareBridge: From Discharge Plan to Recovery Plan",
     description:
-      "A centralized platform for the Codec Club community — connecting members, sharing resources, and collaborating on projects in one place.",
-    image: codecClubImage,
-    tags: ["Community", "Web Development", "Collaboration"],
-  },
-  {
-    id: "healthbridge-telemedicine",
-    title: "Teen Health Coach: A Health Coach Companion ",
-    description:
-      "In partnership with Rady Children's Health and UCI's PHIT Program. The ultimate goal was to create a platform that assisted children with Adolescent Obesity and/or Asthma with building healthier lifestyle choices/habits. This project showcases the positive impact that emerging technologies such as AI Agents and LLMs can make in a pediatric setting.",
-    image: teenHealthCoachImage,
-    tags: ["Research", "UX Design", "Retrieval Augmented Generation", "Agents", "Vector DB", "Collaboration"],
+      "A high-risk transition made safe and easy. — CHOC Research Pediatric and Lifespan Data Science Conference Hackathon Winner.",
+    image: careBridgeImage,
+    tags: ["Multi-Disciplinary Teamwork", "AI Tooling", "User-Centered Design", "Prototyping"],
   },
   {
     id: "faster-ai-real-estate",
@@ -51,12 +44,20 @@ const projects: Project[] = [
     tags: ["Stakeholder Research", "Requirement Elicitation", "Prototyping", "Collaboration", "AI Automation"],
   },
   {
-    id: "choc-hackathon",
-    title: "CareBridge: From Discharge Plan to Recovery Plan",
+    id: "healthbridge-telemedicine",
+    title: "Teen Health Coach: A Health Coach Companion ",
     description:
-      "A high-risk transition made safe and easy. — CHOC Research Pediatric and Lifespan Data Science Conference Hackathon Winner.",
-    image: careBridgeImage,
-    tags: ["Multi-Disciplinary Teamwork", "AI Tooling", "User-Centered Design", "Prototyping"],
+      "In partnership with Rady Children's Health and UCI's PHIT Program. The ultimate goal was to create a platform that assisted children with Adolescent Obesity and/or Asthma with building healthier lifestyle choices/habits. This project showcases the positive impact that emerging technologies such as AI Agents and LLMs can make in a pediatric setting.",
+    image: teenHealthCoachImage,
+    tags: ["Research", "UX Design", "Retrieval Augmented Generation", "Agents", "Vector DB", "Collaboration"],
+  },
+  {
+    id: "codec-club-hub",
+    title: "Codec Club Hub",
+    description:
+      "A centralized platform for the Codec Club community — connecting members, sharing resources, and collaborating on projects in one place.",
+    image: codecClubImage,
+    tags: ["Community", "Web Development", "Collaboration"],
   },
   {
     id: "nexus-enterprise-dashboard",
@@ -83,7 +84,7 @@ export function FeaturedProjects() {
         {/* Section Header */}
         <div className="text-center mb-10 sm:mb-16">
           <h2 className="text-2xl sm:text-3xl md:text-4xl text-[#0A0A0A] mb-3 sm:mb-4">Products I've Shipped!</h2>
-          <p className="text-base sm:text-lg text-[#3F3F3F] max-w-2xl mx-auto px-2">
+          <p className="text-base sm:text-lg text-[#242424] max-w-2xl mx-auto px-2">
             Projects and Proof of Concepts that have turned real problems into creative solutions
           </p>
         </div>
@@ -101,11 +102,7 @@ export function FeaturedProjects() {
                 <ImageWithFallback
                   src={project.image}
                   alt={project.title}
-                  className={`w-full h-full group-hover:scale-105 transition-transform duration-500 ${
-                    project.id === "ocvibe-internship"
-                      ? "object-contain p-10"
-                      : "object-cover"
-                  }`}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 {project.id === "healthbridge-telemedicine" && (
@@ -118,7 +115,7 @@ export function FeaturedProjects() {
               {/* Project Details */}
               <div className="p-6">
                 <h3 className="text-xl text-[#0A0A0A] mb-2">{project.title}</h3>
-                <p className="text-sm text-[#3F3F3F] mb-4">
+                <p className="text-sm text-[#242424] mb-4">
                   {project.description}
                 </p>
 
@@ -128,7 +125,7 @@ export function FeaturedProjects() {
                     <Badge
                       key={tag}
                       variant="secondary"
-                      className="bg-[#EBE6DC] text-[#3F3F3F] hover:bg-[#6B5D44] hover:text-white transition-colors"
+                      className="bg-[#EBE6DC] text-[#242424] hover:bg-[#6B5D44] hover:text-white transition-colors"
                     >
                       {tag}
                     </Badge>

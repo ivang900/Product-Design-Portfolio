@@ -43,7 +43,7 @@ export function Hero() {
         }}
       >
         {/* Context eyebrow (+20%) */}
-        <p className="text-[0.9rem] sm:text-[1.05rem] text-[#3F3F3F] tracking-wider uppercase mb-5 sm:mb-6">
+        <p className="text-[0.9rem] sm:text-[1.05rem] text-[#242424] tracking-wider uppercase mb-5 sm:mb-6">
           UC Irvine · B.S. Informatics · <span className="underline">Expected Graduation June 2027</span> · Orange County, CA
         </p>
 
@@ -51,7 +51,7 @@ export function Hero() {
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-[#0A0A0A] mb-6 sm:mb-8 max-w-4xl mx-auto leading-[1.05]">
           Give me an ambiguous problem with no clear spec.
           <br />
-          <span className="text-[#6B5D44]">I'll scope it, build it, and ship it.</span>
+          <span className="text-[#6B5D44]">I'll sketch it, design it, and ship it.</span>
         </h1>
 
         {/* Award badge (replaces the ticker) — matches the award chip in AboutSection */}
@@ -75,7 +75,7 @@ export function Hero() {
           </Button>
           <Link
             to="/resume"
-            className="inline-flex items-center justify-center rounded-md border border-[#D6CFC2] bg-white/60 hover:border-[#6B5D44] hover:text-[#6B5D44] text-[#3F3F3F] px-6 sm:px-8 py-5 sm:py-6 text-base sm:text-lg transition-colors"
+            className="inline-flex items-center justify-center rounded-md border border-[#D6CFC2] bg-white/60 hover:border-[#6B5D44] hover:text-[#6B5D44] text-[#242424] px-6 sm:px-8 py-5 sm:py-6 text-base sm:text-lg transition-colors"
           >
             Resume
           </Link>
@@ -84,7 +84,7 @@ export function Hero() {
 
       {/* Scroll indicator */}
       <div
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center text-[#8A8A8A]"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center text-[#565656]"
         style={{ opacity: opacity }}
       >
         <span className="text-xs mb-2 tracking-wider uppercase">Scroll</span>

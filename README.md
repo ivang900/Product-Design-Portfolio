@@ -1,11 +1,13 @@
+# Ivan Gonzalez — Product Designer Portfolio
 
-  # Modern Portfolio Design
+Live site: **https://ivandesigns.vercel.app/**
 
-  This is a code bundle for Modern Portfolio Design. The original project is available at https://www.figma.com/design/0c5BXO2lVqHHifcJolwgTa/Modern-Portfolio-Design.
+Built with Vite, React, React Router, and Tailwind CSS.
 
-  ## Running the code
+## Running the code
 
-  Run `npm i` to install the dependencies.
+Run `npm i` to install the dependencies.
 
-  Run `npm run dev` to start the development server.
-  
+Run `npm run dev` to start the development server.
+
+Run `npm run build` to produce a production build in `dist/`.

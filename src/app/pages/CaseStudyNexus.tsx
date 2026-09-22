@@ -19,7 +19,7 @@ export default function CaseStudyNexus() {
           <div className="flex justify-between items-center h-16">
             <Link
               to="/"
-              className="flex items-center text-sm text-[#3F3F3F] hover:text-[#6B5D44] transition-colors"
+              className="flex items-center text-sm text-[#242424] hover:text-[#6B5D44] transition-colors"
             >
               <ArrowLeft className="h-4 w-4 mr-2" />
               Back to Portfolio
@@ -43,20 +43,20 @@ export default function CaseStudyNexus() {
                 <h1 className="text-5xl text-[#0A0A0A] mb-6">
                   A Reimagined Waiting Room Experience
                 </h1>
-                <p className="text-xl text-[#3F3F3F] mb-8">
+                <p className="text-xl text-[#242424] mb-8">
                   Wouldn't you like to know your relative place in line when waiting in the Emergency Room? With respect to your triage level you are assigned a color and a random number only you know to protect your identity.
                 </p>
                 <div className="flex flex-wrap gap-4 sm:gap-6">
                   <div>
-                    <div className="text-sm text-[#6B6B6B] mb-1">Role</div>
+                    <div className="text-sm text-[#454545] mb-1">Role</div>
                     <div className="text-[#0A0A0A]">Researcher & Dashboard Developer</div>
                   </div>
                   <div>
-                    <div className="text-sm text-[#6B6B6B] mb-1">Timeline</div>
+                    <div className="text-sm text-[#454545] mb-1">Timeline</div>
                     <div className="text-[#0A0A0A]">6 weeks</div>
                   </div>
                   <div>
-                    <div className="text-sm text-[#6B6B6B] mb-1">Team</div>
+                    <div className="text-sm text-[#454545] mb-1">Team</div>
                     <div className="text-[#0A0A0A]">1 Ivan Gonzalez, 2 Mackenzie Huynh, 3 Toni Lee, 4 Emily Miranda, 5 Mina Nguyen</div>
                   </div>
                 </div>
@@ -67,7 +67,7 @@ export default function CaseStudyNexus() {
                 <h3 className="text-lg text-[#0A0A0A] mb-4">Technical Stack</h3>
                 <div className="space-y-4">
                   <div>
-                    <div className="flex items-center text-sm text-[#6B6B6B] mb-2">
+                    <div className="flex items-center text-sm text-[#454545] mb-2">
                       <Palette className="h-4 w-4 mr-2" />
                       Design
                     </div>
@@ -79,7 +79,7 @@ export default function CaseStudyNexus() {
                     </div>
                   </div>
                   <div>
-                    <div className="flex items-center text-sm text-[#6B6B6B] mb-2">
+                    <div className="flex items-center text-sm text-[#454545] mb-2">
                       <Code2 className="h-4 w-4 mr-2" />
                       Development
                     </div>
@@ -90,7 +90,7 @@ export default function CaseStudyNexus() {
                     </div>
                   </div>
                   <div>
-                    <div className="flex items-center text-sm text-[#6B6B6B] mb-2">
+                    <div className="flex items-center text-sm text-[#454545] mb-2">
                       <Database className="h-4 w-4 mr-2" />
                       Infrastructure
                     </div>

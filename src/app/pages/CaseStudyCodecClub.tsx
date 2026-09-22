@@ -90,7 +90,7 @@ export default function CaseStudyCodecClub() {
           <div className="flex justify-between items-center h-16">
             <Link
               to="/"
-              className="flex items-center text-sm text-[#3F3F3F] hover:text-[#6B5D44] transition-colors"
+              className="flex items-center text-sm text-[#242424] hover:text-[#6B5D44] transition-colors"
             >
               <ArrowLeft className="h-4 w-4 mr-2" />
               Back to Portfolio
@@ -115,22 +115,22 @@ export default function CaseStudyCodecClub() {
                 <h1 className="text-5xl text-[#0A0A0A] mb-6">
                   CODEC Club Hub
                 </h1>
-                <p className="text-xl text-[#3F3F3F] mb-8">
+                <p className="text-xl text-[#242424] mb-8">
                   CODEC Club Hub lets UC Irvine students find clubs by describing their interests in plain language, instead of browsing a static directory that assumes they already know what they're looking for. I scoped, shipped, and instrumented the product, then used 145+ real searches to decide what to fix next.
                 </p>
                 <div className="flex flex-wrap gap-4 sm:gap-6">
                   <div>
-                    <div className="text-sm text-[#6B6B6B] mb-1">Role</div>
+                    <div className="text-sm text-[#454545] mb-1">Role</div>
                     <div className="text-[#0A0A0A]">
                       Ivan Gonzalez: Product (Scoping &amp; Roadmap), Research &amp; Engineering
                     </div>
                   </div>
                   <div>
-                    <div className="text-sm text-[#6B6B6B] mb-1">Timeline</div>
+                    <div className="text-sm text-[#454545] mb-1">Timeline</div>
                     <div className="text-[#0A0A0A]">Oct. 2025 - Present</div>
                   </div>
                   <div>
-                    <div className="text-sm text-[#6B6B6B] mb-1">Team</div>
+                    <div className="text-sm text-[#454545] mb-1">Team</div>
                     <div className="text-[#0A0A0A]">
                       CODEC Board
                     </div>
@@ -157,7 +157,7 @@ export default function CaseStudyCodecClub() {
                 </h3>
                 <div className="space-y-4">
                   <div>
-                    <div className="flex items-center text-sm text-[#6B6B6B] mb-2">
+                    <div className="flex items-center text-sm text-[#454545] mb-2">
                       <Palette className="h-4 w-4 mr-2" />
                       Design
                     </div>
@@ -168,7 +168,7 @@ export default function CaseStudyCodecClub() {
                     </div>
                   </div>
                   <div>
-                    <div className="flex items-center text-sm text-[#6B6B6B] mb-2">
+                    <div className="flex items-center text-sm text-[#454545] mb-2">
                       <Code2 className="h-4 w-4 mr-2" />
                       Development
                     </div>
@@ -178,7 +178,7 @@ export default function CaseStudyCodecClub() {
                     </div>
                   </div>
                   <div>
-                    <div className="flex items-center text-sm text-[#6B6B6B] mb-2">
+                    <div className="flex items-center text-sm text-[#454545] mb-2">
                       <Database className="h-4 w-4 mr-2" />
                       AI &amp; Data
                     </div>
@@ -203,7 +203,7 @@ export default function CaseStudyCodecClub() {
               <h2 className="text-3xl text-[#0A0A0A] mb-4">
                 Shipped, used, and instrumented
               </h2>
-              <p className="text-[#3F3F3F] max-w-2xl mx-auto">
+              <p className="text-[#242424] max-w-2xl mx-auto">
                 The product is live for the UCI community. Rather than stop at launch, I added click-logging so every search and result click became evidence for the next iteration.
               </p>
             </div>
@@ -215,13 +215,13 @@ export default function CaseStudyCodecClub() {
                   className="bg-white rounded-lg border border-[#D6CFC2] shadow-sm p-6 text-center"
                 >
                   <div className="text-4xl text-[#0A0A0A] mb-2">{m.value}</div>
-                  <div className="text-sm text-[#6B6B6B]">{m.label}</div>
+                  <div className="text-sm text-[#454545]">{m.label}</div>
                 </div>
               ))}
             </div>
 
             <div className="bg-[#EBE6DC] border-l-4 border-[#6B5D44] p-6 rounded-r-lg max-w-3xl mx-auto">
-              <p className="text-[#3F3F3F]">
+              <p className="text-[#242424]">
                 <strong className="text-[#0A0A0A]">The headline finding:</strong> only 21% of clicks landed on the #1 result and 40% within the top three, meaning students scrolled <em>past</em> the top results most of the time. The clear priority became ranking quality rather than coverage.
               </p>
             </div>
@@ -239,10 +239,10 @@ export default function CaseStudyCodecClub() {
                 <h2 className="text-3xl text-[#0A0A0A] mb-4">
                   A directory you can only use if you already know the answer
                 </h2>
-                <p className="text-[#3F3F3F] mb-6">
+                <p className="text-[#242424] mb-6">
                   UCI's organizations live on CampusGroups, but there was no low-effort way to <em>discover</em> them. The existing experience worked only if a student already knew a club's formal name or category, which is the opposite of how people describe what they're into.
                 </p>
-                <ul className="space-y-3 text-[#3F3F3F]">
+                <ul className="space-y-3 text-[#242424]">
                   <li className="flex items-start">
                     <Search className="h-5 w-5 text-[#6B5D44] mr-3 mt-0.5 flex-shrink-0" />
                     Search is small and buried in the corner, easy to miss entirely.
@@ -270,7 +270,7 @@ export default function CaseStudyCodecClub() {
                       className="w-full h-full object-contain"
                     />
                   </div>
-                  <p className="text-xs text-[#8A8A8A] px-2 py-2">
+                  <p className="text-xs text-[#565656] px-2 py-2">
                     The existing CampusGroups directory, the starting point for the redesign.
                   </p>
                 </div>
@@ -289,7 +289,7 @@ export default function CaseStudyCodecClub() {
               <h2 className="text-3xl text-[#0A0A0A] mb-4">
                 Who I talked to before building
               </h2>
-              <p className="text-[#3F3F3F] max-w-2xl mx-auto">
+              <p className="text-[#242424] max-w-2xl mx-auto">
                 Discovery combined direct conversations with students, recurring stakeholder meetings, and a hard look at the raw organization data.
               </p>
             </div>
@@ -298,21 +298,21 @@ export default function CaseStudyCodecClub() {
               {/* Students */}
               <div className="bg-white p-6 rounded-lg border border-[#D6CFC2] shadow-sm">
                 <h3 className="text-lg text-[#0A0A0A] mb-3">Students</h3>
-                <p className="text-sm text-[#3F3F3F]">
+                <p className="text-sm text-[#242424]">
                   As a UCI student, I lived the problem first-hand. I also talked with friends, classmates, and club members, and one reaction kept repeating. People either had no idea the campus had this many clubs to choose from, or had never even heard of CampusGroups, the platform that was supposed to list them all.
                 </p>
               </div>
               {/* Stakeholders */}
               <div className="bg-white p-6 rounded-lg border border-[#D6CFC2] shadow-sm">
                 <h3 className="text-lg text-[#0A0A0A] mb-3">Stakeholders</h3>
-                <p className="text-sm text-[#3F3F3F]">
+                <p className="text-sm text-[#242424]">
                   Stakeholders were me, the CODEC Board, and our faculty advisor. The most consequential input reshaped how we approached ranking. v1 only logged the query itself, but my advisor pushed to also track <em>what students click</em>, building behavioral profiles the way Google does, so the system could learn what a good result actually looks like. That conversation is what created the click-logging telemetry this project now runs on.
                 </p>
               </div>
               {/* Data */}
               <div className="bg-white p-6 rounded-lg border border-[#D6CFC2] shadow-sm">
                 <h3 className="text-lg text-[#0A0A0A] mb-3">The org data</h3>
-                <p className="text-sm text-[#3F3F3F]">
+                <p className="text-sm text-[#242424]">
                   All organization data (names, links, membership benefits, mission statements) came from CampusGroups. It was unstructured and uneven: some orgs were missing links or descriptions, and a number were effectively "dead" and had to be filtered out.
                 </p>
               </div>
@@ -323,7 +323,7 @@ export default function CaseStudyCodecClub() {
                 <Lightbulb className="h-5 w-5 text-[#6B5D44] mr-2" />
                 <h4 className="text-[#0A0A0A]">What surprised me</h4>
               </div>
-              <p className="text-sm text-[#3F3F3F]">
+              <p className="text-sm text-[#242424]">
                 The language gap. Students don't describe their interests the way clubs describe themselves. Listings are generic and formal, like "Computing-based organization," while students talk in shorthand and slang, typing "computer" or the name of a hobby. That mismatch between how orgs are advertised and how people actually search became the core problem the product had to solve, and later it was exactly what the telemetry confirmed.
               </p>
             </div>
@@ -340,7 +340,7 @@ export default function CaseStudyCodecClub() {
               <h2 className="text-3xl text-[#0A0A0A] mb-4">
                 Semantic search over better filters
               </h2>
-              <p className="text-[#3F3F3F] max-w-2xl mx-auto">
+              <p className="text-[#242424] max-w-2xl mx-auto">
                 The central bet: students don't describe their interests in the formal language clubs are listed under. Better filters would still require knowing the right category, so I chose meaning-based matching instead.
               </p>
             </div>
@@ -348,13 +348,13 @@ export default function CaseStudyCodecClub() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
               {/* Option A */}
               <div className="bg-white p-6 rounded-lg border border-[#D6CFC2]">
-                <div className="text-sm uppercase tracking-[0.18em] font-spec text-[#8A8A8A] mb-2">
+                <div className="text-sm uppercase tracking-[0.18em] font-spec text-[#565656] mb-2">
                   Option A: Not chosen
                 </div>
                 <h3 className="text-lg text-[#0A0A0A] mb-3">
                   Improve the existing directory &amp; filters
                 </h3>
-                <ul className="space-y-2 text-sm text-[#3F3F3F]">
+                <ul className="space-y-2 text-sm text-[#242424]">
                   <li>Faster to build on top of CampusGroups' structure.</li>
                   <li>Precise <em>if</em> a student already knows the category or keyword.</li>
                   <li className="text-[#6B5D44]">Breaks down the moment someone types how they actually talk ("I like birds," "k-pop").</li>
@@ -368,7 +368,7 @@ export default function CaseStudyCodecClub() {
                 <h3 className="text-lg text-[#0A0A0A] mb-3">
                   Semantic search on embeddings
                 </h3>
-                <ul className="space-y-2 text-sm text-[#3F3F3F]">
+                <ul className="space-y-2 text-sm text-[#242424]">
                   <li>Embeddings capture <em>meaning</em>; similar intent and org descriptions cluster nearby.</li>
                   <li>Cosine similarity maps a casual query to the nearest organizations.</li>
                   <li className="text-[#6B5D44]">No need for students to know the "right" words first.</li>
@@ -377,7 +377,7 @@ export default function CaseStudyCodecClub() {
             </div>
 
             <div className="bg-white border-l-4 border-[#6B5D44] p-6 rounded-r-lg max-w-3xl mx-auto mb-8">
-              <p className="text-[#3F3F3F]">
+              <p className="text-[#242424]">
                 <strong className="text-[#0A0A0A]">The tradeoff I accepted:</strong> semantic ranking is fuzzy where filters are exact. I traded predictable, precise filtering for forgiving, intent-based matching, betting that removing the "know the right term" barrier mattered more than perfect precision. The telemetry later showed exactly where that bet needs tuning.
               </p>
             </div>
@@ -389,7 +389,7 @@ export default function CaseStudyCodecClub() {
                   <div className="text-sm text-[#0A0A0A] mb-1">
                     <strong>Visual polish and branding</strong>
                   </div>
-                  <p className="text-sm text-[#3F3F3F]">
+                  <p className="text-sm text-[#242424]">
                     v1 shipped intentionally plain. The club's logo and branding system wasn't finished yet, so I chose to prove the core search experience worked before investing in styling.
                   </p>
                 </div>
@@ -397,7 +397,7 @@ export default function CaseStudyCodecClub() {
                   <div className="text-sm text-[#0A0A0A] mb-1">
                     <strong>Star-based match scores</strong>
                   </div>
-                  <p className="text-sm text-[#3F3F3F]">
+                  <p className="text-sm text-[#242424]">
                     v1 displayed the query-match score as stars, but users read them as a <em>rating of the club</em> rather than how well it matched <em>their</em> search. I removed that misleading signal in v2, a small change that made a big difference in how results were understood.
                   </p>
                 </div>
@@ -412,7 +412,7 @@ export default function CaseStudyCodecClub() {
             <h2 className="text-3xl text-[#0A0A0A] mb-4 text-center">
               The Product
             </h2>
-            <p className="text-center text-[#3F3F3F] mb-12 max-w-2xl mx-auto">
+            <p className="text-center text-[#242424] mb-12 max-w-2xl mx-auto">
               A deliberately simple search experience: describe your interests, get a ranked list of real orgs with categories and direct links. Toggle between the first deployment and the current state.
             </p>
 
@@ -420,7 +420,7 @@ export default function CaseStudyCodecClub() {
               <div className="flex items-center justify-between flex-wrap gap-3 mb-6">
                 <h3 className="text-xl text-[#0A0A0A]">UI/UX Display</h3>
                 <div className="flex items-center gap-3">
-                  <span className="text-sm text-[#6B6B6B]">
+                  <span className="text-sm text-[#454545]">
                     {activeSlide.label}
                   </span>
                   <div className="flex items-center gap-1.5" role="tablist" aria-label="Select version">
@@ -435,7 +435,7 @@ export default function CaseStudyCodecClub() {
                         className={`h-2 rounded-full transition-all ${
                           i === slideIndex
                             ? "w-6 bg-[#6B5D44]"
-                            : "w-2 bg-[#D6CFC2] hover:bg-[#8A8A8A]"
+                            : "w-2 bg-[#D6CFC2] hover:bg-[#565656]"
                         }`}
                       />
                     ))}
@@ -464,7 +464,7 @@ export default function CaseStudyCodecClub() {
                       </div>
                       <div className="p-6">
                         <h4 className="text-[#0A0A0A] mb-2">{card.title}</h4>
-                        <p className="text-sm text-[#3F3F3F]">{card.caption}</p>
+                        <p className="text-sm text-[#242424]">{card.caption}</p>
                       </div>
                     </div>
                   ))}
@@ -474,7 +474,7 @@ export default function CaseStudyCodecClub() {
                   type="button"
                   onClick={goPrevSlide}
                   aria-label="Previous version"
-                  className="absolute -left-3 sm:-left-5 top-1/2 -translate-y-1/2 h-10 w-10 rounded-full bg-white hover:bg-white shadow-md border border-[#D6CFC2] flex items-center justify-center text-[#3F3F3F] hover:text-[#6B5D44] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#6B5D44] transition"
+                  className="absolute -left-3 sm:-left-5 top-1/2 -translate-y-1/2 h-10 w-10 rounded-full bg-white hover:bg-white shadow-md border border-[#D6CFC2] flex items-center justify-center text-[#242424] hover:text-[#6B5D44] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#6B5D44] transition"
                 >
                   <ChevronLeft className="h-5 w-5" />
                 </button>
@@ -482,7 +482,7 @@ export default function CaseStudyCodecClub() {
                   type="button"
                   onClick={goNextSlide}
                   aria-label="Next version"
-                  className="absolute -right-3 sm:-right-5 top-1/2 -translate-y-1/2 h-10 w-10 rounded-full bg-white hover:bg-white shadow-md border border-[#D6CFC2] flex items-center justify-center text-[#3F3F3F] hover:text-[#6B5D44] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#6B5D44] transition"
+                  className="absolute -right-3 sm:-right-5 top-1/2 -translate-y-1/2 h-10 w-10 rounded-full bg-white hover:bg-white shadow-md border border-[#D6CFC2] flex items-center justify-center text-[#242424] hover:text-[#6B5D44] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#6B5D44] transition"
                 >
                   <ChevronRight className="h-5 w-5" />
                 </button>
@@ -501,7 +501,7 @@ export default function CaseStudyCodecClub() {
               <h2 className="text-3xl text-[#0A0A0A] mb-4">
                 145 real searches, one clear lesson
               </h2>
-              <p className="text-[#3F3F3F] max-w-2xl mx-auto">
+              <p className="text-[#242424] max-w-2xl mx-auto">
                 I instrumented the deployed app to log every query, the ranked results, and which result the student actually clicked. Between February and June 2026 that produced 145 real searches with their clicks, and a specific direction.
               </p>
             </div>
@@ -509,13 +509,13 @@ export default function CaseStudyCodecClub() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-4xl mx-auto">
               <div className="bg-white p-6 rounded-lg border border-[#D6CFC2] shadow-sm">
                 <h4 className="text-[#0A0A0A] mb-2">People don't speak in "club language"</h4>
-                <p className="text-sm text-[#3F3F3F]">
+                <p className="text-sm text-[#242424]">
                   Students typed short, casual queries like "data," "k-pop," "rowing," and "birds," not the formal names and mission-statement phrasing the clubs were listed under. Meaning-based matching was the right call, but the vocabulary gap is real and wide.
                 </p>
               </div>
               <div className="bg-white p-6 rounded-lg border border-[#D6CFC2] shadow-sm">
                 <h4 className="text-[#0A0A0A] mb-2">Ranking is the bottleneck</h4>
-                <p className="text-sm text-[#3F3F3F]">
+                <p className="text-sm text-[#242424]">
                   Only 21% of clicks hit the top result and 40% the top three, so 6 in 10 students scrolled further to find their match. The right orgs were being retrieved, but not ordered well enough. The fix is better ranking and hybrid keyword-plus-semantic filtering, not more data.
                 </p>
               </div>
@@ -544,7 +544,7 @@ export default function CaseStudyCodecClub() {
                   <div className="text-sm text-[#0A0A0A] mb-1">
                     <strong>Instrument on day one</strong>
                   </div>
-                  <div className="text-sm text-[#3F3F3F]">
+                  <div className="text-sm text-[#242424]">
                     Click-logging is what turned opinions into direction. If I rebuilt this, telemetry would ship with v1 instead of after, and I'd have caught the ranking gap weeks earlier.
                   </div>
                 </div>
@@ -557,7 +557,7 @@ export default function CaseStudyCodecClub() {
                   <div className="text-sm text-[#0A0A0A] mb-1">
                     <strong>Design for how students actually type</strong>
                   </div>
-                  <div className="text-sm text-[#3F3F3F]">
+                  <div className="text-sm text-[#242424]">
                     I optimized for natural-language blurbs, but most real queries were one or two words. A hybrid approach that layers keyword and category signals onto semantic matching would serve how students actually search.
                   </div>
                 </div>
@@ -570,7 +570,7 @@ export default function CaseStudyCodecClub() {
                   <div className="text-sm text-[#0A0A0A] mb-1">
                     <strong>Treat data quality as a feature</strong>
                   </div>
-                  <div className="text-sm text-[#3F3F3F]">
+                  <div className="text-sm text-[#242424]">
                     Uneven and "dead" org entries from CampusGroups directly hurt result quality. A lightweight cleaning and freshness pass would raise the ceiling on everything downstream.
                   </div>
                 </div>
@@ -583,7 +583,7 @@ export default function CaseStudyCodecClub() {
                   <div className="text-sm text-[#0A0A0A] mb-1">
                     <strong>Test across every category, including the ones I don't know</strong>
                   </div>
-                  <div className="text-sm text-[#3F3F3F]">
+                  <div className="text-sm text-[#242424]">
                     My own test queries leaned heavily on ICS clubs because I know them all, and that bias showed. When an arts student or anyone outside tech searched, results were weaker: more dead clubs and off-target matches surfaced because I'd validated against the corner of the ecosystem I understood best. Next time I'd deliberately test accuracy across all industries before trusting the results.
                   </div>
                 </div>
@@ -598,7 +598,7 @@ export default function CaseStudyCodecClub() {
             <h2 className="text-3xl text-[#0A0A0A] mb-4 text-center">
               What's Next
             </h2>
-            <p className="text-center text-[#3F3F3F] mb-12 max-w-2xl mx-auto">
+            <p className="text-center text-[#242424] mb-12 max-w-2xl mx-auto">
               The roadmap, grounded in what the data has already shown.
             </p>
 
@@ -616,7 +616,7 @@ export default function CaseStudyCodecClub() {
                       <h4 className="text-lg text-[#0A0A0A] mb-3">
                         Build &amp; deploy
                       </h4>
-                      <ul className="text-sm text-[#3F3F3F] space-y-2 text-left">
+                      <ul className="text-sm text-[#242424] space-y-2 text-left">
                         <li className="flex items-start">
                           <CheckCircle2 className="h-4 w-4 text-[#6B5D44] mr-2 mt-0.5 flex-shrink-0" />
                           Scoped and launched a working semantic search product indexing 100+ orgs.
@@ -641,7 +641,7 @@ export default function CaseStudyCodecClub() {
                       <h4 className="text-lg text-[#0A0A0A] mb-3">
                         Instrument &amp; learn
                       </h4>
-                      <ul className="text-sm text-[#3F3F3F] space-y-2">
+                      <ul className="text-sm text-[#242424] space-y-2">
                         <li className="flex items-start">
                           <CheckCircle2 className="h-4 w-4 text-[#6B5D44] mr-2 mt-0.5 flex-shrink-0" />
                           Added click-logging telemetry and collected 145+ real searches with their clicks.
@@ -662,13 +662,13 @@ export default function CaseStudyCodecClub() {
                 <div className="relative grid grid-cols-1 md:grid-cols-2 gap-8">
                   <div className="md:text-right">
                     <div className="bg-white p-6 rounded-lg border-2 border-dashed border-[#D6CFC2] inline-block">
-                      <div className="text-sm uppercase tracking-[0.18em] font-spec text-[#8A8A8A] mb-2">
+                      <div className="text-sm uppercase tracking-[0.18em] font-spec text-[#565656] mb-2">
                         Phase 3: Next
                       </div>
                       <h4 className="text-lg text-[#0A0A0A] mb-3">
                         Fix ranking
                       </h4>
-                      <ul className="text-sm text-[#3F3F3F] space-y-2 text-left">
+                      <ul className="text-sm text-[#242424] space-y-2 text-left">
                         <li className="flex items-start">
                           <ArrowRight className="h-4 w-4 text-[#6B5D44] mr-2 mt-0.5 flex-shrink-0" />
                           Layer keyword and category signals onto semantic matching (hybrid ranking).

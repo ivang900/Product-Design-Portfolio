@@ -89,7 +89,7 @@ export default function CaseStudyHealthBridge() {
           <div className="flex justify-between items-center h-16">
             <Link
               to="/"
-              className="flex items-center text-sm text-[#3F3F3F] hover:text-[#6B5D44] transition-colors"
+              className="flex items-center text-sm text-[#242424] hover:text-[#6B5D44] transition-colors"
             >
               <ArrowLeft className="h-4 w-4 mr-2" />
               Back to Portfolio
@@ -117,22 +117,22 @@ export default function CaseStudyHealthBridge() {
                 <h1 className="text-5xl text-[#0A0A0A] mb-6">
                   Rady Children's Health: Scoping & Designing A Health Coach Platform
                 </h1>
-                <p className="text-xl text-[#3F3F3F] mb-8">
+                <p className="text-xl text-[#242424] mb-8">
                   This project allowed our team to explore the impact emerging technologies like AI Agents and LLMs can have in pediatric care settings. We designed an MVP health coach platform for young teens living with asthma and obesity — helping them build better habits in the hope of better long-term health outcomes.
                 </p>
                 <div className="flex flex-wrap gap-4 sm:gap-6">
                   <div>
-                    <div className="text-sm text-[#6B6B6B] mb-1">Role</div>
+                    <div className="text-sm text-[#454545] mb-1">Role</div>
                     <div className="text-[#0A0A0A]">
                       UI/UX Researcher, Project Scoping, Collaboration, AI Agent Developer
                     </div>
                   </div>
                   <div>
-                    <div className="text-sm text-[#6B6B6B] mb-1">Timeline</div>
+                    <div className="text-sm text-[#454545] mb-1">Timeline</div>
                     <div className="text-[#0A0A0A]">10 weeks · Completed June 2026</div>
                   </div>
                   <div>
-                    <div className="text-sm text-[#6B6B6B] mb-1">Team</div>
+                    <div className="text-sm text-[#454545] mb-1">Team</div>
                     <div className="text-[#0A0A0A]">1 Ivan Gonzalez, 2 Jerald Adriano, 3 Kathryn Ng, 4 Thuy Nguyen</div>
                   </div>
                 </div>
@@ -159,7 +159,7 @@ export default function CaseStudyHealthBridge() {
                 <h3 className="text-lg text-[#0A0A0A] mb-4">Technical Stack</h3>
                 <div className="space-y-4">
                   <div>
-                    <div className="flex items-center text-sm text-[#6B6B6B] mb-2">
+                    <div className="flex items-center text-sm text-[#454545] mb-2">
                       <Palette className="h-4 w-4 mr-2" />
                       Design
                     </div>
@@ -169,7 +169,7 @@ export default function CaseStudyHealthBridge() {
                     </div>
                   </div>
                   <div>
-                    <div className="flex items-center text-sm text-[#6B6B6B] mb-2">
+                    <div className="flex items-center text-sm text-[#454545] mb-2">
                       <Code2 className="h-4 w-4 mr-2" />
                       Development
                     </div>
@@ -180,7 +180,7 @@ export default function CaseStudyHealthBridge() {
                     </div>
                   </div>
                   <div>
-                    <div className="flex items-center text-sm text-[#6B6B6B] mb-2">
+                    <div className="flex items-center text-sm text-[#454545] mb-2">
                       <Database className="h-4 w-4 mr-2" />
                       Standards & AI
                     </div>
@@ -216,13 +216,13 @@ export default function CaseStudyHealthBridge() {
               <div>
                 <h3 className="text-xl text-[#0A0A0A] mb-4">The Challenge</h3>
                 <div className="prose prose-gray">
-                  <p className="text-[#3F3F3F] mb-4">
+                  <p className="text-[#242424] mb-4">
                     We set out to build an MVP for a health platform aimed at young teens living with asthma and obesity. The goal was to help them build better habits — and, in turn, reach better health outcomes. A central bet was LLM integration: language models can drive the interactivity and learning that keeps a young audience engaged in their own care.
                   </p>
-                  <p className="text-[#3F3F3F]">
+                  <p className="text-[#242424]">
                     <strong>Key Pain Points:</strong>
                   </p>
-                  <ul className="text-[#3F3F3F] space-y-2">
+                  <ul className="text-[#242424] space-y-2">
                     <li>1. There is currently no interactive health platform that actually teaches young teens about their conditions.</li>
                     <li>2. Existing resources are static and clinical — not engaging for the age group that needs them most.</li>
                     <li>3. Habit-building guidance rarely meets teens at their level or keeps them coming back.</li>
@@ -245,7 +245,7 @@ export default function CaseStudyHealthBridge() {
                       <div className="font-medium text-[#0A0A0A] mb-1">
                         Dr. Lois Sayrs
                       </div>
-                      <p className="text-sm text-[#3F3F3F]">
+                      <p className="text-sm text-[#242424]">
                         Our primary research outlet — provided key insights on our young audience and how to design for teens.
                       </p>
                     </div>
@@ -253,7 +253,7 @@ export default function CaseStudyHealthBridge() {
                       <div className="font-medium text-[#0A0A0A] mb-1">
                         First-Hand Lived Experience
                       </div>
-                      <p className="text-sm text-[#3F3F3F]">
+                      <p className="text-sm text-[#242424]">
                         I brought lived experience to the table. I genuinely enjoyed putting myself in their shoes and designing something I wish I'd had growing up.
                       </p>
                     </div>
@@ -261,7 +261,7 @@ export default function CaseStudyHealthBridge() {
                       <div className="font-medium text-[#0A0A0A] mb-1">
                         Centralive Platform
                       </div>
-                      <p className="text-sm text-[#3F3F3F]">
+                      <p className="text-sm text-[#242424]">
                         A HIPAA-compliant data platform the MVP was designed to work with. Teens can link a Garmin watch to Centralive, and that wearable data flows in to populate the dashboard.
                       </p>
                     </div>
@@ -270,7 +270,7 @@ export default function CaseStudyHealthBridge() {
                   <h4 className="text-sm uppercase tracking-[0.18em] font-spec text-[#6B5D44] mb-4">
                     Key Insights
                   </h4>
-                  <ul className="space-y-2 text-sm text-[#3F3F3F]">
+                  <ul className="space-y-2 text-sm text-[#242424]">
                     <li className="flex items-start">
                       <CheckCircle2 className="h-4 w-4 text-[#6B5D44] mr-2 mt-0.5 flex-shrink-0" />
                       Young teens need simplicity — but simple can't mean boring. Engagement is what keeps them learning.
@@ -304,7 +304,7 @@ export default function CaseStudyHealthBridge() {
             <h2 className="text-3xl text-[#0A0A0A] mb-4 text-center">
               The Deliverable
             </h2>
-            <p className="text-center text-[#3F3F3F] mb-12 max-w-2xl mx-auto">
+            <p className="text-center text-[#242424] mb-12 max-w-2xl mx-auto">
               A walkthrough of the MVP health coach platform we designed and built over the 10-week internship — from onboarding to LLM-driven coaching and a wearable-powered dashboard.
             </p>
 
@@ -336,7 +336,7 @@ export default function CaseStudyHealthBridge() {
                   </div>
                   <div className="p-6">
                     <h4 className="text-[#0A0A0A] mb-2">{media.title}</h4>
-                    <p className="text-sm text-[#3F3F3F]">{media.caption}</p>
+                    <p className="text-sm text-[#242424]">{media.caption}</p>
                   </div>
                 </div>
               ))}
@@ -354,7 +354,7 @@ export default function CaseStudyHealthBridge() {
               <h2 className="text-3xl text-[#0A0A0A] mb-4">
                 The Feedback & Iteration Loop
               </h2>
-              <p className="text-[#3F3F3F] max-w-2xl mx-auto">
+              <p className="text-[#242424] max-w-2xl mx-auto">
                 Weekly review sessions kept the design honest. Every iteration was measured against the needs of a young, condition-affected audience.
               </p>
             </div>
@@ -373,7 +373,7 @@ export default function CaseStudyHealthBridge() {
                       <div className="text-sm text-[#0A0A0A] mb-1">
                         <strong>Weekly Review Sessions</strong>
                       </div>
-                      <div className="text-xs text-[#3F3F3F]">
+                      <div className="text-xs text-[#242424]">
                         Regular check-ins let us course-correct fast and validate direction against real feedback each week.
                       </div>
                     </div>
@@ -387,7 +387,7 @@ export default function CaseStudyHealthBridge() {
                       <div className="text-sm text-[#0A0A0A] mb-1">
                         <strong>Accessibility</strong>
                       </div>
-                      <div className="text-xs text-[#3F3F3F]">
+                      <div className="text-xs text-[#242424]">
                         The platform had to be usable by everyone in our audience — accessibility was a first-class design constraint, not an afterthought.
                       </div>
                     </div>
@@ -401,7 +401,7 @@ export default function CaseStudyHealthBridge() {
                       <div className="text-sm text-[#0A0A0A] mb-1">
                         <strong>Simple, But Engaging</strong>
                       </div>
-                      <div className="text-xs text-[#3F3F3F]">
+                      <div className="text-xs text-[#242424]">
                         Simplicity for a younger audience — without losing the engagement that keeps teens coming back and learning.
                       </div>
                     </div>
@@ -418,7 +418,7 @@ export default function CaseStudyHealthBridge() {
             <h2 className="text-3xl text-[#0A0A0A] mb-4 text-center">
               What's Next
             </h2>
-            <p className="text-center text-[#3F3F3F] mb-12 max-w-2xl mx-auto">
+            <p className="text-center text-[#242424] mb-12 max-w-2xl mx-auto">
               A Roadmap of This Project's Lifecycle
             </p>
 
@@ -437,7 +437,7 @@ export default function CaseStudyHealthBridge() {
                       <h4 className="text-lg text-[#0A0A0A] mb-3">
                         Scope, Design & Build the MVP
                       </h4>
-                      <ul className="text-sm text-[#3F3F3F] space-y-2 text-left">
+                      <ul className="text-sm text-[#242424] space-y-2 text-left">
                         <li className="flex items-start">
                           <ArrowRight className="h-4 w-4 text-[#6B5D44] mr-2 mt-0.5 flex-shrink-0" />
                           Researched the audience, scoped the platform, and designed and built a working MVP over 10 weeks.
@@ -466,7 +466,7 @@ export default function CaseStudyHealthBridge() {
                       <h4 className="text-lg text-[#0A0A0A] mb-3">
                         Hand Off to Development
                       </h4>
-                      <ul className="text-sm text-[#3F3F3F] space-y-2">
+                      <ul className="text-sm text-[#242424] space-y-2">
                         <li className="flex items-start">
                           <ArrowRight className="h-4 w-4 text-[#6B5D44] mr-2 mt-0.5 flex-shrink-0" />
                           Hand off the design and MVP to a development team to take it to production.

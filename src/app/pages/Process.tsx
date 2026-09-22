@@ -126,7 +126,7 @@ export default function Process() {
           <h1 className="text-3xl sm:text-4xl md:text-5xl text-[#0A0A0A] mb-6">
             How I Approach Every Project
           </h1>
-          <p className="text-base sm:text-lg text-[#3F3F3F] max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-[#242424] max-w-2xl mx-auto">
             From ambiguous brief to validated proof of concept — a repeatable, research-driven
             framework I've refined across enterprise software, healthcare technology, and AI products.
           </p>
@@ -157,10 +157,10 @@ export default function Process() {
                   {/* Right — content */}
                   <div className="flex-1">
                     <h2 className="text-xl text-[#0A0A0A] mb-2">{phase.title}</h2>
-                    <p className="text-sm text-[#6B6B6B] mb-4 italic">{phase.summary}</p>
+                    <p className="text-sm text-[#454545] mb-4 italic">{phase.summary}</p>
                     <ul className="space-y-2">
                       {phase.details.map((detail, i) => (
-                        <li key={i} className="flex items-start gap-2 text-sm text-[#3F3F3F]">
+                        <li key={i} className="flex items-start gap-2 text-sm text-[#242424]">
                           <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-[#6B5D44] flex-shrink-0" />
                           {detail}
                         </li>
@@ -190,7 +190,7 @@ export default function Process() {
                 className="p-6 bg-white border border-[#D6CFC2] rounded-xl hover:border-[#6B5D44] transition-colors"
               >
                 <h3 className="text-base text-[#0A0A0A] mb-2">{p.title}</h3>
-                <p className="text-sm text-[#3F3F3F] leading-relaxed">{p.description}</p>
+                <p className="text-sm text-[#242424] leading-relaxed">{p.description}</p>
               </div>
             ))}
           </div>

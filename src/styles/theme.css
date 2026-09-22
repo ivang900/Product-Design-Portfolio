@@ -10,15 +10,15 @@
 */
 
 :root {
-  --font-size: 16px;
+  --font-size: 18px;
 
   /* ── Industrial palette ── */
   --bone: #F5F2EC;          /* page background, off-white */
   --wash: #EBE6DC;          /* alt section bg, warm taupe wash */
   --band: #B8A689;          /* decorative taupe band / chip backgrounds */
   --ink: #0A0A0A;           /* headings, primary CTA bg */
-  --body-text: #3F3F3F;     /* body copy (AA on bone) */
-  --muted-text: #6B6B6B;    /* meta / labels (AA Large on bone) */
+  --body-text: #242424;     /* body copy (AA on bone) */
+  --muted-text: #454545;    /* meta / labels (AA Large on bone) */
   --rule: #D6CFC2;          /* hairline rules, borders */
   --accent: #6B5D44;        /* deep taupe — links, accent text (AA on bone) */
   --accent-hover: #4A3F2D;

@@ -42,7 +42,7 @@ export default function CaseStudy() {
           <div className="flex justify-between items-center h-16">
             <Link
               to="/"
-              className="flex items-center text-sm text-[#3F3F3F] hover:text-[#6B5D44] transition-colors"
+              className="flex items-center text-sm text-[#242424] hover:text-[#6B5D44] transition-colors"
             >
               <ArrowLeft className="h-4 w-4 mr-2" />
               Back to Portfolio
@@ -67,22 +67,22 @@ export default function CaseStudy() {
                 <h1 className="text-5xl text-[#0A0A0A] mb-6">
                   FASTer: A Usable, Accessible and... FASTER UI Experience!
                 </h1>
-                <p className="text-xl text-[#3F3F3F] mb-8">
+                <p className="text-xl text-[#242424] mb-8">
                   Internal tools should be improving efficiency and reducing friction, not causing it. No one enjoys doing busy work and even fewer people enjoy doing it on a clunky outdated User Interface. That is why we set out to Research, Plan, and Develop FASTer, a full UI/UX refactoring of First American's FAST internal tool.
                 </p>
                 <div className="flex flex-wrap gap-4 sm:gap-6">
                   <div>
-                    <div className="text-sm text-[#6B6B6B] mb-1">Role</div>
+                    <div className="text-sm text-[#454545] mb-1">Role</div>
                     <div className="text-[#0A0A0A]">
                       I assisted with both UI/UX Research and Implementation. I enjoy wearing many hats!
                     </div>
                   </div>
                   <div>
-                    <div className="text-sm text-[#6B6B6B] mb-1">Timeline</div>
+                    <div className="text-sm text-[#454545] mb-1">Timeline</div>
                     <div className="text-[#0A0A0A]">36 hours</div>
                   </div>
                   <div>
-                    <div className="text-sm text-[#6B6B6B] mb-1">Team</div>
+                    <div className="text-sm text-[#454545] mb-1">Team</div>
                     <div className="text-[#0A0A0A]">
                       1{" "}
                       <a href="https://www.linkedin.com/in/ivang9/" target="_blank" rel="noopener noreferrer" className="underline hover:text-[#6B5D44] transition-colors">Ivan Gonzalez</a>,{" "}
@@ -104,7 +104,7 @@ export default function CaseStudy() {
                 </h3>
                 <div className="space-y-4">
                   <div>
-                    <div className="flex items-center text-sm text-[#6B6B6B] mb-2">
+                    <div className="flex items-center text-sm text-[#454545] mb-2">
                       <Palette className="h-4 w-4 mr-2" />
                       Design
                     </div>
@@ -115,7 +115,7 @@ export default function CaseStudy() {
                     </div>
                   </div>
                   <div>
-                    <div className="flex items-center text-sm text-[#6B6B6B] mb-2">
+                    <div className="flex items-center text-sm text-[#454545] mb-2">
                       <Code2 className="h-4 w-4 mr-2" />
                       Development
                     </div>
@@ -126,7 +126,7 @@ export default function CaseStudy() {
                     </div>
                   </div>
                   <div>
-                    <div className="flex items-center text-sm text-[#6B6B6B] mb-2">
+                    <div className="flex items-center text-sm text-[#454545] mb-2">
                       <Database className="h-4 w-4 mr-2" />
                       AI & Data
                     </div>
@@ -155,18 +155,18 @@ export default function CaseStudy() {
                   The Challenge
                 </h3>
                 <div className="prose prose-gray">
-                  <p className="text-[#3F3F3F] mb-4">
+                  <p className="text-[#242424] mb-4">
                     <strong>No data</strong>.<br />
                     <strong>No access to FAST</strong>.<br />
                     <strong>No domain knowledge</strong>.
                   </p>
-                  <p className="text-[#3F3F3F] mb-4">
+                  <p className="text-[#242424] mb-4">
                     An ambitious undertaking for a 36 hour hackathon. Despite all the ambiguities, we embraced the challenge and successfully navigated this phase.  
                   </p>
-                  <p className="text-[#3F3F3F]">
+                  <p className="text-[#242424]">
                     <strong>Key Pain Points:</strong>
                   </p>
-                  <ul className="text-[#3F3F3F] space-y-2">
+                  <ul className="text-[#242424] space-y-2">
                     <li>Simply put. It's hard on the eyes.</li>
                     <li>Abundance of menu options. </li>
                     <li>Too many clicks to do anything.</li>
@@ -199,7 +199,7 @@ export default function CaseStudy() {
                       <div className="font-medium text-[#0A0A0A] mb-1">
                         Booth Attendee-Current UX Product Designer
                       </div>
-                      <p className="text-sm text-[#3F3F3F]">
+                      <p className="text-sm text-[#242424]">
                         Cleared up misconceptions on our understanding of the real estate transaction process. Provided first hand accounts of the FAST system. This assisted in providing context for improvements.
                       </p>
                     </div>
@@ -207,7 +207,7 @@ export default function CaseStudy() {
                       <div className="font-medium text-[#0A0A0A] mb-1">
                         Booth Attendee-Current First American Employee
                       </div>
-                      <p className="text-sm text-[#3F3F3F]">
+                      <p className="text-sm text-[#242424]">
                         Provided insightful answers to questions about document templates, Power of Attorney documents, and Deeds. This helped us scope the functionality of our UI/UX redesign.
                       </p>
                     </div>
@@ -215,7 +215,7 @@ export default function CaseStudy() {
                       <div className="font-medium text-[#0A0A0A] mb-1">
                         General Hackathon Staff
                       </div>
-                      <p className="text-sm text-[#3F3F3F]">
+                      <p className="text-sm text-[#242424]">
                         Provided an outside perspective that allowed us to test our understanding of the domain by explaining our user flow logic. We operated under the assumption that if a general user can understand what it does, so can a technical one.
                       </p>
                     </div>
@@ -224,7 +224,7 @@ export default function CaseStudy() {
                   <h4 className="text-sm uppercase tracking-[0.18em] font-spec text-[#6B5D44] mb-4">
                     Key Insights from Interviews
                   </h4>
-                  <ul className="space-y-2 text-sm text-[#3F3F3F]">
+                  <ul className="space-y-2 text-sm text-[#242424]">
                     <li className="flex items-start">
                       <CheckCircle2 className="h-4 w-4 text-[#6B5D44] mr-2 mt-0.5 flex-shrink-0" />
                       Real Estate transactions CANNOT proceed if there are clerical or legal inconsistencies.
@@ -254,7 +254,7 @@ export default function CaseStudy() {
             <h2 className="text-3xl text-[#0A0A0A] mb-4 text-center">
               Initial Prototyping
             </h2>
-            <p className="text-center text-[#3F3F3F] mb-12 max-w-2xl mx-auto">
+            <p className="text-center text-[#242424] mb-12 max-w-2xl mx-auto">
               Witness the evolution of our drafts!
             </p>
 
@@ -273,7 +273,7 @@ export default function CaseStudy() {
                     className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white rounded-full p-1.5 shadow-md transition-colors"
                     aria-label="Previous image"
                   >
-                    <ChevronLeft className="h-4 w-4 text-[#3F3F3F]" />
+                    <ChevronLeft className="h-4 w-4 text-[#242424]" />
                   </button>
                   {/* Right Arrow */}
                   <button
@@ -281,7 +281,7 @@ export default function CaseStudy() {
                     className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white rounded-full p-1.5 shadow-md transition-colors"
                     aria-label="Next image"
                   >
-                    <ChevronRight className="h-4 w-4 text-[#3F3F3F]" />
+                    <ChevronRight className="h-4 w-4 text-[#242424]" />
                   </button>
                   {/* Dot Indicators */}
                   <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1.5">
@@ -301,7 +301,7 @@ export default function CaseStudy() {
                   <h4 className="text-sm text-[#0A0A0A] mb-2">
                     An AI powered quickstart.
                   </h4>
-                  <p className="text-xs text-[#3F3F3F]">
+                  <p className="text-xs text-[#242424]">
 By investing heavily in scoping and research, we developed a refined prompt that effectively leveraged AI, using our collective insights to map out the project's direction.                  </p>
                 </div>
               </div>
@@ -316,7 +316,7 @@ By investing heavily in scoping and research, we developed a refined prompt that
                   <h4 className="text-sm text-[#0A0A0A] mb-2">
                     Manual editing on Figma! 
                   </h4>
-                  <p className="text-xs text-[#3F3F3F]">
+                  <p className="text-xs text-[#242424]">
                     Co Researcher Mia Aburto and I took the LLM generated initial prototype to Figma and began to realize our visions.
                   </p>
                 </div>
@@ -332,7 +332,7 @@ By investing heavily in scoping and research, we developed a refined prompt that
                   <h4 className="text-sm text-[#0A0A0A] mb-2">
                     One last check before takeoff!
                   </h4>
-                  <p className="text-xs text-[#3F3F3F]">
+                  <p className="text-xs text-[#242424]">
                     As a team we agreed this was the visualization of all our current understandings of the scope. We were ready to collect feedback and begin iterating again.
                   </p>
                 </div>
@@ -349,7 +349,7 @@ By investing heavily in scoping and research, we developed a refined prompt that
               <h2 className="text-3xl text-[#0A0A0A] mb-4">
                 The Feedback & Iteration Loop
               </h2>
-              <p className="text-[#3F3F3F] max-w-2xl mx-auto">
+              <p className="text-[#242424] max-w-2xl mx-auto">
                 A general synthesis of all the conversational data sourced from First American Panelists. 
               </p>
             </div>
@@ -370,7 +370,7 @@ By investing heavily in scoping and research, we developed a refined prompt that
                       <div className="text-sm text-[#0A0A0A] mb-1">
                         <strong>Color Template Concerns:</strong> Too much blue.
                       </div>
-                      <div className="text-xs text-[#3F3F3F]">
+                      <div className="text-xs text-[#242424]">
                         This was a fair concern, what we presented did utilize many shades of a blue and even a solid blue rectangle panel.
                       </div>
                     </div>
@@ -384,7 +384,7 @@ By investing heavily in scoping and research, we developed a refined prompt that
                       <div className="text-sm text-[#0A0A0A] mb-1">
                         <strong>Branding</strong> Adds a nice touch but 3 logos is too many.
                       </div>
-                      <div className="text-xs text-[#3F3F3F]">
+                      <div className="text-xs text-[#242424]">
                         In an attempt to retain brand identity we opted to include First American branding. However, we were unsure on placement and opted to show place logos in many areas.
                       </div>
                     </div>
@@ -398,7 +398,7 @@ By investing heavily in scoping and research, we developed a refined prompt that
                       <div className="text-sm text-[#0A0A0A] mb-1">
                         <strong>Navigation Concerns</strong> More of dashboard than a site/UI. 
                       </div>
-                      <div className="text-xs text-[#3F3F3F]">
+                      <div className="text-xs text-[#242424]">
                         We were missing a key component of any modern fluid website, a navigation menu.
                       </div>
                     </div>
@@ -412,7 +412,7 @@ By investing heavily in scoping and research, we developed a refined prompt that
                       <div className="text-sm text-[#0A0A0A] mb-1">
                         <strong>Is this secure?</strong> Our platform must appear credible and safe
                       </div>
-                      <div className="text-xs text-[#3F3F3F]">
+                      <div className="text-xs text-[#242424]">
                         Data security and integrity became a key talking point during our feedback collection. We needed to make it apparent our platform is safe. 
                       </div>
                     </div>
@@ -428,15 +428,15 @@ By investing heavily in scoping and research, we developed a refined prompt that
 
                 {/* Before */}
                 <div className="mb-8">
-                  <div className="text-sm uppercase tracking-[0.18em] font-spec text-[#6B6B6B] mb-3">
+                  <div className="text-sm uppercase tracking-[0.18em] font-spec text-[#454545] mb-3">
                     Before
                   </div>
                   <div className="bg-[#EBE6DC] p-6 rounded-lg border border-[#D6CFC2]">
-                    <div className="text-sm text-[#3F3F3F] space-y-2">
-                      <p>❌ Too much blue poor color palette</p>
-                      <p>❌ Way too many logos, cluttering the UI</p>
-                      <p>❌ Missing a navigation menu, missing the FAST in FASTer</p>
-                      <p>❌ Credibility and trust was not visually obvious</p>
+                    <div className="text-sm text-[#242424] space-y-2">
+                      <p>Too much blue poor color palette</p>
+                      <p>Way too many logos, cluttering the UI</p>
+                      <p>Missing a navigation menu, missing the FAST in FASTer</p>
+                      <p>Credibility and trust was not visually obvious</p>
                     </div>
                   </div>
                 </div>
@@ -447,16 +447,16 @@ By investing heavily in scoping and research, we developed a refined prompt that
                     After
                   </div>
                   <div className="bg-[#EBE6DC] p-6 rounded-lg border border-[#6B5D44]">
-                    <div className="text-sm text-[#3F3F3F] space-y-2">
-                      <p>✅ Simpler color palette</p>
+                    <div className="text-sm text-[#242424] space-y-2">
+                      <p>Simpler color palette</p>
                       <p>
-                        ✅ Decided on the final placement of ONE logo.
+                        Decided on the final placement of ONE logo.
                       </p>
                       <p>
-                        ✅ Included a navigation menu to quickly move between modules.
+                        Included a navigation menu to quickly move between modules.
                       </p>
                       <p>
-                        ✅ Final design included a footer that in real time displayed the security that would in theory be running in the background. 
+                        Final design included a footer that in real time displayed the security that would in theory be running in the background. 
                       </p>
                     </div>
                   </div>
@@ -472,7 +472,7 @@ By investing heavily in scoping and research, we developed a refined prompt that
             <h2 className="text-3xl text-[#0A0A0A] mb-4 text-center">
               Final Deliverable: The Proof of Concept
             </h2>
-            <p className="text-center text-[#3F3F3F] mb-12 max-w-2xl mx-auto">
+            <p className="text-center text-[#242424] mb-12 max-w-2xl mx-auto">
               High-fidelity UI paired with functional technical architecture
             </p>
 
@@ -492,7 +492,7 @@ By investing heavily in scoping and research, we developed a refined prompt that
                     <h4 className="text-[#0A0A0A] mb-2">
                       Landing Page Overhaul
                     </h4>
-                    <p className="text-sm text-[#3F3F3F]">
+                    <p className="text-sm text-[#242424]">
                       Login features allow users to save files and pick up right where they left off!
                     </p>
                   </div>
@@ -512,7 +512,7 @@ By investing heavily in scoping and research, we developed a refined prompt that
                     <h4 className="text-[#0A0A0A] mb-2">
                       My Parsing Agent
                     </h4>
-                    <p className="text-sm text-[#3F3F3F]">
+                    <p className="text-sm text-[#242424]">
                       Reduce workload and errors. Parse POAS and Cross Validate them in seconds! With my Agent!
                     </p>
                   </div>
@@ -540,7 +540,7 @@ By investing heavily in scoping and research, we developed a refined prompt that
                       <div className="text-sm uppercase tracking-[0.18em] font-spec text-[#6B5D44] mb-2">
                         Creative Problem Solving
                       </div>
-                      <ul className="text-sm text-[#3F3F3F] space-y-1">
+                      <ul className="text-sm text-[#242424] space-y-1">
                         <li>• First and foremost, this allowed us to navigate around our lack of data.</li>
                         <li>• Fueled our development and served as the backbone of our frontend functionality.</li>
                       </ul>
@@ -549,7 +549,7 @@ By investing heavily in scoping and research, we developed a refined prompt that
                       <div className="text-sm uppercase tracking-[0.18em] font-spec text-[#6B5D44] mb-2">
                         Why It Works
                       </div>
-                      <ul className="text-sm text-[#3F3F3F] space-y-1">
+                      <ul className="text-sm text-[#242424] space-y-1">
                         <li>• Grounded with real First American Document templates</li>
                         <li>• Pre defined fields leave no room for LLM hallucinations. It is simply drag and dropping.</li>
                         <li>• We only needed to model the states of our interface. Since all documents would follow the same template, repeating API calls would slow down our deliverable. Instead we opted to cache API calls to focus on displaying our redesign.</li>
@@ -559,7 +559,7 @@ By investing heavily in scoping and research, we developed a refined prompt that
                       <div className="text-sm uppercase tracking-[0.18em] font-spec text-[#6B5D44] mb-2">
                         Functionality
                       </div>
-                      <ul className="text-sm text-[#3F3F3F] space-y-1">
+                      <ul className="text-sm text-[#242424] space-y-1">
                         <li>• We only needed to model the states of our interface. Since all documents would follow the same template, repeating API calls would slow down our deliverable. Instead we opted to cache API calls to focus on displaying our redesign.</li>
                       </ul>
                     </div>
@@ -577,7 +577,7 @@ By investing heavily in scoping and research, we developed a refined prompt that
             <h2 className="text-3xl text-[#0A0A0A] mb-4 text-center">
               Scaling the Vision
             </h2>
-            <p className="text-center text-[#3F3F3F] mb-12 max-w-2xl mx-auto">
+            <p className="text-center text-[#242424] mb-12 max-w-2xl mx-auto">
               How this Proof of Concept could evolve into a full scale production environment
             </p>
 
@@ -598,7 +598,7 @@ By investing heavily in scoping and research, we developed a refined prompt that
                       <h4 className="text-lg text-[#0A0A0A] mb-3">
                         When it comes to Agents. Context is KING
                       </h4>
-                      <ul className="text-sm text-[#3F3F3F] space-y-2 text-left">
+                      <ul className="text-sm text-[#242424] space-y-2 text-left">
                         <li className="flex items-start">
                           <ArrowRight className="h-4 w-4 text-[#6B5D44] mr-2 mt-0.5 flex-shrink-0" />
                           Provide more parsing template functionality
@@ -631,7 +631,7 @@ By investing heavily in scoping and research, we developed a refined prompt that
                       <h4 className="text-lg text-[#0A0A0A] mb-3">
                         Advanced AI Features
                       </h4>
-                      <ul className="text-sm text-[#3F3F3F] space-y-2">
+                      <ul className="text-sm text-[#242424] space-y-2">
                         <li className="flex items-start">
                           <ArrowRight className="h-4 w-4 text-[#6B5D44] mr-2 mt-0.5 flex-shrink-0" />
                           Scope out and implement more innovative ways to use Agents

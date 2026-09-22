@@ -20,7 +20,7 @@ export default function CaseStudyWorkflow() {
           <div className="flex justify-between items-center h-16">
             <Link
               to="/"
-              className="flex items-center text-sm text-[#3F3F3F] hover:text-[#6B5D44] transition-colors"
+              className="flex items-center text-sm text-[#242424] hover:text-[#6B5D44] transition-colors"
             >
               <ArrowLeft className="h-4 w-4 mr-2" />
               Back to Portfolio
@@ -44,22 +44,22 @@ export default function CaseStudyWorkflow() {
                 <h1 className="text-5xl text-[#0A0A0A] mb-6">
                   WorkFlow: Making Enterprise Automation Accessible to Everyone
                 </h1>
-                <p className="text-xl text-[#3F3F3F] mb-8">
+                <p className="text-xl text-[#242424] mb-8">
                   Designing a no-code workflow builder that empowers operations
                   teams — not just engineers — to automate complex multi-step
                   business processes with AI-powered intelligent task routing.
                 </p>
                 <div className="flex flex-wrap gap-4 sm:gap-6">
                   <div>
-                    <div className="text-sm text-[#6B6B6B] mb-1">Role</div>
+                    <div className="text-sm text-[#454545] mb-1">Role</div>
                     <div className="text-[#0A0A0A]">Lead Product Designer & Interaction Architect</div>
                   </div>
                   <div>
-                    <div className="text-sm text-[#6B6B6B] mb-1">Timeline</div>
+                    <div className="text-sm text-[#454545] mb-1">Timeline</div>
                     <div className="text-[#0A0A0A]">10 weeks (Q3 2023)</div>
                   </div>
                   <div>
-                    <div className="text-sm text-[#6B6B6B] mb-1">Team</div>
+                    <div className="text-sm text-[#454545] mb-1">Team</div>
                     <div className="text-[#0A0A0A]">2 Designers, 5 Engineers, 1 ML Engineer</div>
                   </div>
                 </div>
@@ -70,7 +70,7 @@ export default function CaseStudyWorkflow() {
                 <h3 className="text-lg text-[#0A0A0A] mb-4">Technical Stack</h3>
                 <div className="space-y-4">
                   <div>
-                    <div className="flex items-center text-sm text-[#6B6B6B] mb-2">
+                    <div className="flex items-center text-sm text-[#454545] mb-2">
                       <Palette className="h-4 w-4 mr-2" />
                       Design
                     </div>
@@ -81,7 +81,7 @@ export default function CaseStudyWorkflow() {
                     </div>
                   </div>
                   <div>
-                    <div className="flex items-center text-sm text-[#6B6B6B] mb-2">
+                    <div className="flex items-center text-sm text-[#454545] mb-2">
                       <Code2 className="h-4 w-4 mr-2" />
                       Development
                     </div>
@@ -92,7 +92,7 @@ export default function CaseStudyWorkflow() {
                     </div>
                   </div>
                   <div>
-                    <div className="flex items-center text-sm text-[#6B6B6B] mb-2">
+                    <div className="flex items-center text-sm text-[#454545] mb-2">
                       <Database className="h-4 w-4 mr-2" />
                       AI & Data
                     </div>
@@ -118,24 +118,24 @@ export default function CaseStudyWorkflow() {
               <div>
                 <h3 className="text-xl text-[#0A0A0A] mb-4">The Challenge</h3>
                 <div className="prose prose-gray">
-                  <p className="text-[#3F3F3F] mb-4">
+                  <p className="text-[#242424] mb-4">
                     Process mapping workshops with 11 operations managers across
                     four enterprise clients revealed a consistent bottleneck:
                     <strong> every automation request — no matter how simple — had
                     to be queued with the engineering team</strong>, creating a
                     2–6 week backlog that killed operational momentum.
                   </p>
-                  <p className="text-[#3F3F3F] mb-4">
+                  <p className="text-[#242424] mb-4">
                     Existing tools like Zapier and Make.com were too limited for
                     enterprise-scale logic, while enterprise options like MuleSoft
                     required dedicated integration specialists. Operations teams
                     were stuck in the middle — capable of defining what they
                     needed, but blocked from building it.
                   </p>
-                  <p className="text-[#3F3F3F]">
+                  <p className="text-[#242424]">
                     <strong>Key Pain Points:</strong>
                   </p>
-                  <ul className="text-[#3F3F3F] space-y-2">
+                  <ul className="text-[#242424] space-y-2">
                     <li>2–6 week engineering queue for every automation request</li>
                     <li>Manual hand-offs causing 30%+ error rates in multi-step processes</li>
                     <li>No visibility into workflow status for operations managers</li>
@@ -153,7 +153,7 @@ export default function CaseStudyWorkflow() {
                       <div className="font-medium text-[#0A0A0A] mb-1">
                         Sandra, 44 – Operations Manager
                       </div>
-                      <p className="text-sm text-[#3F3F3F]">
+                      <p className="text-sm text-[#242424]">
                         "I know exactly what I need automated. I just can't build
                         it — and the dev team won't get to it for weeks."
                       </p>
@@ -162,7 +162,7 @@ export default function CaseStudyWorkflow() {
                       <div className="font-medium text-[#0A0A0A] mb-1">
                         Carlos, 31 – Business Process Analyst
                       </div>
-                      <p className="text-sm text-[#3F3F3F]">
+                      <p className="text-sm text-[#242424]">
                         "I spend half my week chasing people about where a task
                         is in the process. There's no visibility."
                       </p>
@@ -171,7 +171,7 @@ export default function CaseStudyWorkflow() {
                       <div className="font-medium text-[#0A0A0A] mb-1">
                         Priya, 36 – Engineering Lead
                       </div>
-                      <p className="text-sm text-[#3F3F3F]">
+                      <p className="text-sm text-[#242424]">
                         "30% of our sprint is ops automation tickets that
                         shouldn't require engineers at all."
                       </p>
@@ -179,7 +179,7 @@ export default function CaseStudyWorkflow() {
                   </div>
 
                   <h4 className="text-sm uppercase tracking-[0.18em] font-spec text-[#6B5D44] mb-4">Key Insights from Interviews</h4>
-                  <ul className="space-y-2 text-sm text-[#3F3F3F]">
+                  <ul className="space-y-2 text-sm text-[#242424]">
                     <li className="flex items-start">
                       <CheckCircle2 className="h-4 w-4 text-[#6B5D44] mr-2 mt-0.5 flex-shrink-0" />
                       Drag-and-drop mental model is universally understood — use it
@@ -203,7 +203,7 @@ export default function CaseStudyWorkflow() {
         <section className="py-16 bg-[#EBE6DC]">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl text-[#0A0A0A] mb-4 text-center">Initial Prototyping</h2>
-            <p className="text-center text-[#3F3F3F] mb-12 max-w-2xl mx-auto">
+            <p className="text-center text-[#242424] mb-12 max-w-2xl mx-auto">
               First Draft: Mapping node-based interaction models and AI routing logic
             </p>
 
@@ -236,7 +236,7 @@ export default function CaseStudyWorkflow() {
                   />
                   <div className="p-4">
                     <h4 className="text-sm text-[#0A0A0A] mb-2">{item.title}</h4>
-                    <p className="text-xs text-[#3F3F3F]">{item.desc}</p>
+                    <p className="text-xs text-[#242424]">{item.desc}</p>
                   </div>
                 </div>
               ))}
@@ -250,7 +250,7 @@ export default function CaseStudyWorkflow() {
             <div className="text-center mb-12">
               <Badge className="bg-[#0A0A0A] text-white mb-4">The Pivot</Badge>
               <h2 className="text-3xl text-[#0A0A0A] mb-4">The Feedback & Iteration Loop</h2>
-              <p className="text-[#3F3F3F] max-w-2xl mx-auto">
+              <p className="text-[#242424] max-w-2xl mx-auto">
                 Week 5 usability sessions with operations managers exposed critical learnability barriers
               </p>
             </div>
@@ -289,7 +289,7 @@ export default function CaseStudyWorkflow() {
                         <div className="text-sm text-[#0A0A0A] mb-1">
                           <strong>{item.label}:</strong> {item.issue}
                         </div>
-                        <div className="text-xs text-[#3F3F3F]">{item.detail}</div>
+                        <div className="text-xs text-[#242424]">{item.detail}</div>
                       </div>
                     </div>
                   ))}
@@ -299,26 +299,26 @@ export default function CaseStudyWorkflow() {
               <div>
                 <h3 className="text-xl text-[#0A0A0A] mb-6">Before vs. After Design Evolution</h3>
                 <div className="mb-8">
-                  <div className="text-sm uppercase tracking-[0.18em] font-spec text-[#6B6B6B] mb-3">Before</div>
+                  <div className="text-sm uppercase tracking-[0.18em] font-spec text-[#454545] mb-3">Before</div>
                   <div className="bg-[#EBE6DC] p-6 rounded-lg border border-[#D6CFC2]">
-                    <div className="text-sm text-[#3F3F3F] space-y-2">
-                      <p>❌ Blank canvas with no onboarding or guided start</p>
-                      <p>❌ Opaque AI routing with no explanation of decisions</p>
-                      <p>❌ Unencrypted workflow definitions at rest</p>
-                      <p>❌ GraphQL subscriptions causing DB connection storms</p>
-                      <p>❌ No template library — every workflow built from scratch</p>
+                    <div className="text-sm text-[#242424] space-y-2">
+                      <p>Blank canvas with no onboarding or guided start</p>
+                      <p>Opaque AI routing with no explanation of decisions</p>
+                      <p>Unencrypted workflow definitions at rest</p>
+                      <p>GraphQL subscriptions causing DB connection storms</p>
+                      <p>No template library — every workflow built from scratch</p>
                     </div>
                   </div>
                 </div>
                 <div>
                   <div className="text-sm uppercase tracking-[0.18em] font-spec text-[#6B5D44] mb-3">After</div>
                   <div className="bg-[#EBE6DC] p-6 rounded-lg border border-[#6B5D44]">
-                    <div className="text-sm text-[#3F3F3F] space-y-2">
-                      <p>✅ Template gallery as default start — 40+ pre-built workflow templates</p>
-                      <p>✅ AI routing "reasoning panel" showing why each task was assigned</p>
-                      <p>✅ AES-256 encryption for all workflow definitions at rest</p>
-                      <p>✅ Event-driven architecture (Kafka) replacing subscription polling</p>
-                      <p>✅ "Clone & customize" flow for duplicating and adapting existing workflows</p>
+                    <div className="text-sm text-[#242424] space-y-2">
+                      <p>Template gallery as default start — 40+ pre-built workflow templates</p>
+                      <p>AI routing "reasoning panel" showing why each task was assigned</p>
+                      <p>AES-256 encryption for all workflow definitions at rest</p>
+                      <p>Event-driven architecture (Kafka) replacing subscription polling</p>
+                      <p>"Clone & customize" flow for duplicating and adapting existing workflows</p>
                     </div>
                   </div>
                 </div>
@@ -333,7 +333,7 @@ export default function CaseStudyWorkflow() {
             <h2 className="text-3xl text-[#0A0A0A] mb-4 text-center">
               Final Deliverable: The Proof of Concept
             </h2>
-            <p className="text-center text-[#3F3F3F] mb-12 max-w-2xl mx-auto">
+            <p className="text-center text-[#242424] mb-12 max-w-2xl mx-auto">
               No-code workflow builder with AI task routing, live monitoring, and a 40+ template library
             </p>
 
@@ -348,7 +348,7 @@ export default function CaseStudyWorkflow() {
                   />
                   <div className="p-6">
                     <h4 className="text-[#0A0A0A] mb-2">Visual Workflow Canvas</h4>
-                    <p className="text-sm text-[#3F3F3F]">
+                    <p className="text-sm text-[#242424]">
                       Drag-and-drop node builder with conditional branching, parallel paths,
                       and inline AI routing configuration — no code required
                     </p>
@@ -363,7 +363,7 @@ export default function CaseStudyWorkflow() {
                   />
                   <div className="p-6">
                     <h4 className="text-[#0A0A0A] mb-2">Live Process Monitor</h4>
-                    <p className="text-sm text-[#3F3F3F]">
+                    <p className="text-sm text-[#242424]">
                       Real-time workflow status with bottleneck heatmaps, SLA countdowns,
                       and AI routing transparency panels
                     </p>
@@ -382,7 +382,7 @@ export default function CaseStudyWorkflow() {
               ].map((m) => (
                 <div key={m.label} className="bg-white p-6 rounded-lg border border-[#D6CFC2] text-center">
                   <div className="text-3xl text-[#6B5D44] mb-2">{m.stat}</div>
-                  <div className="text-sm text-[#3F3F3F]">{m.label}</div>
+                  <div className="text-sm text-[#242424]">{m.label}</div>
                 </div>
               ))}
             </div>
@@ -393,7 +393,7 @@ export default function CaseStudyWorkflow() {
         <section className="py-16 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl text-[#0A0A0A] mb-4 text-center">Scaling the Vision</h2>
-            <p className="text-center text-[#3F3F3F] mb-12 max-w-2xl mx-auto">
+            <p className="text-center text-[#242424] mb-12 max-w-2xl mx-auto">
               How WorkFlow could grow into the enterprise automation platform for every team
             </p>
 
@@ -442,7 +442,7 @@ export default function CaseStudyWorkflow() {
                           <div className="bg-white p-6 rounded-lg border border-[#D6CFC2] inline-block text-left">
                             <div className="text-sm uppercase tracking-[0.18em] font-spec text-[#6B5D44] mb-2">{item.phase}</div>
                             <h4 className="text-lg text-[#0A0A0A] mb-3">{item.title}</h4>
-                            <ul className="text-sm text-[#3F3F3F] space-y-2">
+                            <ul className="text-sm text-[#242424] space-y-2">
                               {item.items.map((b) => (
                                 <li key={b} className="flex items-start">
                                   <ArrowRight className="h-4 w-4 text-[#6B5D44] mr-2 mt-0.5 flex-shrink-0" />
@@ -461,7 +461,7 @@ export default function CaseStudyWorkflow() {
                           <div className="bg-white p-6 rounded-lg border border-[#D6CFC2] inline-block">
                             <div className="text-sm uppercase tracking-[0.18em] font-spec text-[#6B5D44] mb-2">{item.phase}</div>
                             <h4 className="text-lg text-[#0A0A0A] mb-3">{item.title}</h4>
-                            <ul className="text-sm text-[#3F3F3F] space-y-2">
+                            <ul className="text-sm text-[#242424] space-y-2">
                               {item.items.map((b) => (
                                 <li key={b} className="flex items-start">
                                   <ArrowRight className="h-4 w-4 text-[#6B5D44] mr-2 mt-0.5 flex-shrink-0" />

@@ -27,7 +27,7 @@ export function Navigation() {
   };
 
   const navLinkClass =
-    "text-sm text-[#3F3F3F] hover:text-[#6B5D44] transition-colors";
+    "text-sm text-[#242424] hover:text-[#6B5D44] transition-colors";
   const activeLinkClass = "text-sm text-[#6B5D44]";
 
   const isActive = (path: string) => location.pathname === path;
@@ -39,8 +39,8 @@ export function Navigation() {
           {/* Left Side - Name */}
           <div className="flex items-center">
             <span className="font-medium text-[#0A0A0A]">Ivan Gonzalez</span>
-            <span className="mx-2 text-[#8A8A8A]">|</span>
-            <span className="text-[1.05rem] text-[#3F3F3F]">Product Manager & Developer</span>
+            <span className="mx-2 text-[#565656]">|</span>
+            <span className="text-[1.05rem] text-[#242424]">Product Designer & Developer</span>
           </div>
 
           {/* Desktop Navigation - Right Side */}
@@ -57,6 +57,12 @@ export function Navigation() {
             >
               About
             </button>
+            <Link
+              to="/process"
+              className={isActive("/process") ? activeLinkClass : navLinkClass}
+            >
+              Process
+            </Link>
             <Link
               to="/resume"
               className={
@@ -75,9 +81,9 @@ export function Navigation() {
             className="md:hidden p-2"
           >
             {mobileMenuOpen ? (
-              <X className="h-6 w-6 text-[#3F3F3F]" />
+              <X className="h-6 w-6 text-[#242424]" />
             ) : (
-              <Menu className="h-6 w-6 text-[#3F3F3F]" />
+              <Menu className="h-6 w-6 text-[#242424]" />
             )}
           </button>
         </div>
@@ -88,23 +94,34 @@ export function Navigation() {
             <div className="flex flex-col space-y-4">
               <button
                 onClick={() => scrollToSection("work")}
-                className="text-sm text-[#3F3F3F] hover:text-[#6B5D44] transition-colors text-left"
+                className="text-sm text-[#242424] hover:text-[#6B5D44] transition-colors text-left"
               >
                 My Projects
               </button>
               <button
                 onClick={() => scrollToSection("about")}
-                className="text-sm text-[#3F3F3F] hover:text-[#6B5D44] transition-colors text-left"
+                className="text-sm text-[#242424] hover:text-[#6B5D44] transition-colors text-left"
               >
                 About
               </button>
+              <Link
+                to="/process"
+                onClick={() => setMobileMenuOpen(false)}
+                className={
+                  isActive("/process")
+                    ? "text-sm text-[#6B5D44] text-left"
+                    : "text-sm text-[#242424] hover:text-[#6B5D44] transition-colors text-left"
+                }
+              >
+                Process
+              </Link>
               <Link
                 to="/resume"
                 onClick={() => setMobileMenuOpen(false)}
                 className={
                   isActive("/resume")
                     ? "text-sm text-[#6B5D44] text-left"
-                    : "text-sm text-[#3F3F3F] hover:text-[#6B5D44] transition-colors text-left"
+                    : "text-sm text-[#242424] hover:text-[#6B5D44] transition-colors text-left"
                 }
               >
                 Resume

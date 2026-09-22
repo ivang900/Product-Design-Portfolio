@@ -91,25 +91,23 @@ export function AboutSection() {
             <h2 className="text-2xl sm:text-3xl md:text-4xl text-[#0A0A0A] mb-4 sm:mb-6">
               About Me
             </h2>
-            <div className="space-y-4 text-[#3F3F3F]">
+            <div className="space-y-4 text-[#242424]">
               <p>
-                Hello! My name is Ivan Gonzalez and I am 3rd year Informatics major at UC Irvine where I leverage Tech, Data and AI to solve real world problems.
+                Hello! My name is Ivan Gonzalez and I am a 3rd year Informatics major at UC Irvine, where I design products that use Tech, Data and AI to solve real world problems.
               </p>
               <p>
-                With capabilities in Programming, Writing, Researching, and overall Communication 
-                I find fulfillment in utilizing these skills to make the lives of others easier.
-                
+                With capabilities in Design, Programming, Researching, and overall Communication
+                I find fulfillment in using these skills to make the lives of others easier.
               </p>
               <p>
-                My approach to problems combines user centered design methodologies with
-                modern AI and cloud technologies. Whether it's building a RAG
-                system for intelligent document processing or designing an
-                intuitive dashboard for complex data, I focus on creating
-                solutions that are both technically sound and delightfully
-                usable.
+                My approach starts with the user. I sketch and prototype fast, build what I
+                design, and lean on modern AI tools to move from idea to working screen
+                quickly. Whether it's redesigning an AI platform's UI or designing an
+                intuitive dashboard for complex data, I focus on solutions that are both
+                usable and technically sound.
               </p>
               <p>
-                This Summer I will be at OCVIBE working on their internal AI platform
+                Right now I'm the product owner and designer for an internal AI platform, AI Core.
               </p>
             </div>
           </div>
@@ -134,7 +132,7 @@ export function AboutSection() {
                           className="flex items-center space-x-3 p-3 bg-white rounded-lg border border-[#D6CFC2]"
                         >
                           <Icon className="h-5 w-5 text-[#6B5D44]" />
-                          <span className="text-sm text-[#3F3F3F]">
+                          <span className="text-sm text-[#242424]">
                             {skill.name}
                           </span>
                         </div>
@@ -172,7 +170,7 @@ export function AboutSection() {
                 {active.title}
               </h3>
               {active.subtitle && (
-                <p className="text-[#3F3F3F] text-sm sm:text-base">
+                <p className="text-[#242424] text-sm sm:text-base">
                   {active.subtitle}
                 </p>
               )}
@@ -192,7 +190,7 @@ export function AboutSection() {
                     className={`h-2 rounded-full transition-all ${
                       i === activeIndex
                         ? "w-6 bg-[#6B5D44]"
-                        : "w-2 bg-[#D6CFC2] hover:bg-[#8A8A8A]"
+                        : "w-2 bg-[#D6CFC2] hover:bg-[#565656]"
                     }`}
                   />
                 ))}
@@ -204,7 +202,7 @@ export function AboutSection() {
             type="button"
             onClick={goPrev}
             aria-label="Previous hackathon"
-            className="absolute left-2 sm:left-3 top-1/2 -translate-y-1/2 h-10 w-10 rounded-full bg-white/90 hover:bg-white shadow-md border border-[#D6CFC2] flex items-center justify-center text-[#3F3F3F] hover:text-[#6B5D44] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#6B5D44] transition"
+            className="absolute left-2 sm:left-3 top-1/2 -translate-y-1/2 h-10 w-10 rounded-full bg-white/90 hover:bg-white shadow-md border border-[#D6CFC2] flex items-center justify-center text-[#242424] hover:text-[#6B5D44] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#6B5D44] transition"
           >
             <ChevronLeft className="h-5 w-5" />
           </button>
@@ -212,7 +210,7 @@ export function AboutSection() {
             type="button"
             onClick={goNext}
             aria-label="Next hackathon"
-            className="absolute right-2 sm:right-3 top-1/2 -translate-y-1/2 h-10 w-10 rounded-full bg-white/90 hover:bg-white shadow-md border border-[#D6CFC2] flex items-center justify-center text-[#3F3F3F] hover:text-[#6B5D44] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#6B5D44] transition"
+            className="absolute right-2 sm:right-3 top-1/2 -translate-y-1/2 h-10 w-10 rounded-full bg-white/90 hover:bg-white shadow-md border border-[#D6CFC2] flex items-center justify-center text-[#242424] hover:text-[#6B5D44] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#6B5D44] transition"
           >
             <ChevronRight className="h-5 w-5" />
           </button>

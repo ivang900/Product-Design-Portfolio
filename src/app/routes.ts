@@ -7,7 +7,7 @@ import CaseStudyNexus from "./pages/CaseStudyNexus";
 import CaseStudyWorkflow from "./pages/CaseStudyWorkflow";
 import CaseStudyCodecClub from "./pages/CaseStudyCodecClub";
 import CaseStudyCareBridge from "./pages/CaseStudyCareBridge";
-import CaseStudyOCVibe from "./pages/CaseStudyOCVibe";
+import CaseStudyAICore from "./pages/CaseStudyAICore";
 import Process from "./pages/Process";
 import Resume from "./pages/Resume";
 
@@ -36,8 +36,8 @@ export const router = createBrowserRouter([
         Component: CaseStudyWorkflow,
       },
       {
-        path: "/case-study/ocvibe-internship",
-        Component: CaseStudyOCVibe,
+        path: "/case-study/ai-core",
+        Component: CaseStudyAICore,
       },
       {
         path: "/case-study/codec-club-hub",

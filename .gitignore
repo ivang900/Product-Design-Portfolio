@@ -2,3 +2,14 @@ CLAUDE.md
 node_modules
 dist
 
+
+# OS / IDE
+.DS_Store
+.idea/
+
+# raw screenshot sources (cropped versions live in src/assets/aicore)
+ai-core-landing-process/
+ai-core-projects-process/
+ai-core-toggles-process/
+ai-core-ui-wtext/
+.vercel
