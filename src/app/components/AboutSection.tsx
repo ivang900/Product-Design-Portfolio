@@ -93,7 +93,7 @@ export function AboutSection() {
             </h2>
             <div className="space-y-4 text-[#242424]">
               <p>
-                Hello! My name is Ivan Gonzalez and I am a 3rd year Informatics major at UC Irvine, where I design products that use Tech, Data and AI to solve real world problems.
+                Hello! My name is Ivan Gonzalez and I am a senior Informatics major at UC Irvine, where I design products that use Tech, Data and AI to solve real world problems.
               </p>
               <p>
                 With capabilities in Design, Programming, Researching, and overall Communication
@@ -107,7 +107,7 @@ export function AboutSection() {
                 usable and technically sound.
               </p>
               <p>
-                Right now I'm the product owner and designer for an internal AI platform, AI Core.
+                Right now I'm an AI Adoption Specialist at SafeLab AI Engineering, mapping how client teams actually work and prototyping AI solutions in Claude. Before that, I was the product owner and designer for AI Core, an internal AI platform, during my summer internship. I'm also a Claude Certified Developer (Foundations).
               </p>
             </div>
           </div>

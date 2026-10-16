@@ -14,6 +14,7 @@ import {
 import { Button } from "../components/ui/button";
 import { Badge } from "../components/ui/badge";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
+import { StageCarousel } from "../components/StageCarousel";
 
 // AI Core — design process assets
 import wireframe from "../../assets/aicore/projects-wireframe.jpg";
@@ -32,90 +33,6 @@ import landingSidebarDetailNew from "../../assets/aicore/landing-v3-sidebar-deta
 import chatA from "../../assets/aicore/chat-a.png";
 import chatB from "../../assets/aicore/chat-b.png";
 import chatC from "../../assets/aicore/chat-c-final.png";
-
-type Stage = { img: string; alt: string; tag: string; caption: string };
-
-function StageCarousel({ slides }: { slides: Stage[] }) {
-  const [i, setI] = useState(0);
-  const total = slides.length;
-  const prev = () => setI((n) => (n - 1 + total) % total);
-  const next = () => setI((n) => (n + 1) % total);
-  const s = slides[i];
-  const btnClass =
-    "shrink-0 h-12 w-12 rounded-full bg-white hover:bg-[#EBE6DC] shadow-sm border border-[#D6CFC2] flex items-center justify-center text-[#242424] hover:text-[#6B5D44] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#6B5D44] transition";
-
-  return (
-    <div className="max-w-5xl mx-auto">
-      {/* Stage stepper — shows the full 1·2·3 process and the current stage */}
-      <div
-        className="flex flex-wrap justify-center gap-2 mb-4"
-        role="tablist"
-        aria-label="Select stage"
-      >
-        {slides.map((sl, idx) => {
-          const activeStep = idx === i;
-          return (
-            <button
-              key={idx}
-              type="button"
-              role="tab"
-              aria-selected={activeStep}
-              aria-label={`Stage ${idx + 1}: ${sl.tag}`}
-              onClick={() => setI(idx)}
-              className={`inline-flex items-center gap-2 px-3 py-1.5 text-xs sm:text-sm font-spec font-bold uppercase tracking-[0.18em] transition-colors ${
-                activeStep
-                  ? "bg-[#0A0A0A] text-[#F5F2EC]"
-                  : "bg-white border border-[#D6CFC2] text-[#454545] hover:border-[#6B5D44] hover:text-[#6B5D44]"
-              }`}
-            >
-              <span className={activeStep ? "text-[#B8A689]" : "text-[#6B5D44]"}>
-                {idx + 1}
-              </span>
-              {sl.tag}
-            </button>
-          );
-        })}
-      </div>
-
-      <div className="relative bg-white rounded-lg border border-[#D6CFC2] overflow-hidden">
-        <div className="relative aspect-video bg-[#EBE6DC] flex items-center justify-center">
-          <ImageWithFallback
-            key={i}
-            src={s.img}
-            alt={s.alt}
-            className="w-full h-full object-contain transition-opacity duration-300"
-          />
-        </div>
-      </div>
-
-      {/* Controls under the image */}
-      <div className="mt-5 flex items-center justify-center gap-4">
-        <button
-          type="button"
-          onClick={prev}
-          aria-label="Previous stage"
-          className={btnClass}
-        >
-          <ChevronLeft className="h-5 w-5" />
-        </button>
-        <p className="flex-1 text-center text-base sm:text-lg text-[#242424]">
-          <span className="font-spec font-bold uppercase tracking-[0.18em] text-[#0A0A0A] mr-2">
-            {i + 1} / {total}
-          </span>
-          {s.caption}
-        </p>
-        <button
-          type="button"
-          onClick={next}
-          aria-label="Next stage"
-          className={btnClass}
-        >
-          <ChevronRight className="h-5 w-5" />
-        </button>
-      </div>
-    </div>
-  );
-}
 
 type CompareSlide = {
   img: string;
@@ -227,17 +144,10 @@ export default function CaseStudyAICore() {
                   <Badge className="bg-[#6B5D44] text-white mb-4">
                     Internship
                   </Badge>
-                  <Badge className="bg-green-600 text-white mb-4 ml-2">
-                    In Progress
-                  </Badge>
-                </div>
-                <div className="inline-flex items-center gap-2.5 mb-5 bg-[#0A0A0A] text-[#F5F2EC] px-4 py-2.5 text-sm sm:text-base font-spec font-bold uppercase tracking-[0.18em]">
-                  <Sparkles className="h-5 w-5 shrink-0" />
-                  How I use AI in my design process
                 </div>
                 <h1 className="text-5xl text-[#0A0A0A] mb-6">AI Core</h1>
                 <p className="text-xl text-[#242424] mb-8">
-                  I'm the product owner of AI Core, an internal AI platform running live in production. The codebase was built by an outside vendor and handed off as a bare repository — no documentation. My work spans documenting and stabilizing the existing system, improving its output, rebuilding its UI, and extending what it can do to drive company-wide adoption.
+                  I was the product owner of AI Core, an internal AI platform running live in production. The codebase was built by an outside vendor and handed off as a bare repository — no documentation. My work spanned documenting and stabilizing the existing system, improving its output, rebuilding its UI, and extending what it can do to drive company-wide adoption.
                 </p>
                 <div className="flex flex-wrap gap-4 sm:gap-6">
                   <div>
@@ -248,7 +158,7 @@ export default function CaseStudyAICore() {
                   </div>
                   <div>
                     <div className="text-sm text-[#454545] mb-1">Timeline</div>
-                    <div className="text-[#0A0A0A]">In Progress</div>
+                    <div className="text-[#0A0A0A]">Jun. – Sep. 2026</div>
                   </div>
                   <div>
                     <div className="text-sm text-[#454545] mb-1">Design tools</div>
@@ -547,13 +457,13 @@ export default function CaseStudyAICore() {
               The Work
             </h2>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-              {/* What I'm Responsible For */}
+              {/* What I Owned */}
               <div>
                 <h3 className="text-xl text-[#0A0A0A] mb-4">
-                  What I'm Responsible For
+                  What I Owned
                 </h3>
                 <p className="text-[#242424] mb-4">
-                  I inherited a live, vendor-built platform with only a repository and no documentation. From there, ownership spans the full lifecycle:
+                  I inherited a live, vendor-built platform with only a repository and no documentation. From there, ownership spanned the full lifecycle:
                 </p>
                 <ul className="text-[#242424] space-y-2">
                   <li className="flex items-start">
@@ -598,6 +508,9 @@ export default function CaseStudyAICore() {
                     <p className="text-sm text-[#242424]">
                       Higher adoption means fewer enterprise AI seats to pay for. The platform saves money because the company's Microsoft enterprise plan makes LLM calls cheaper than full per-seat licenses.
                     </p>
+                    <p className="text-sm text-[#0A0A0A] mt-2">
+                      <span className="font-medium">Result:</span> adoption grew 36%, from 64 to 87 users.
+                    </p>
                   </div>
                   <div className="bg-white p-4 rounded-lg border border-[#D6CFC2]">
                     <div className="font-medium text-[#0A0A0A] mb-1">
@@ -617,8 +530,8 @@ export default function CaseStudyAICore() {
         <section className="py-16 bg-gradient-to-b from-[#EBE6DC] to-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <p className="text-[#242424] max-w-2xl mx-auto mb-8">
-              AI Core is live and still evolving. More of the design work — image
-              generation and the next round of adoption research — is in progress.
+              By the end of my internship, the redesigned AI Core was live in
+              production and adoption had grown 36%, from 64 to 87 users.
             </p>
             <Link to="/">
               <Button
@@ -631,10 +544,10 @@ export default function CaseStudyAICore() {
             </Link>
             <div className="mt-4">
               <Link
-                to="/case-study/choc-hackathon"
+                to="/case-study/reddit-redesign"
                 className="inline-flex items-center text-sm text-[#6B5D44] hover:text-[#4A3F2D]"
               >
-                Next case study: CareBridge
+                Next case study: Reddit Redesign
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </div>

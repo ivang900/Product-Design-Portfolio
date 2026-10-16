@@ -8,6 +8,7 @@ import CaseStudyWorkflow from "./pages/CaseStudyWorkflow";
 import CaseStudyCodecClub from "./pages/CaseStudyCodecClub";
 import CaseStudyCareBridge from "./pages/CaseStudyCareBridge";
 import CaseStudyAICore from "./pages/CaseStudyAICore";
+import CaseStudyReddit from "./pages/CaseStudyReddit";
 import Process from "./pages/Process";
 import Resume from "./pages/Resume";
 
@@ -46,6 +47,10 @@ export const router = createBrowserRouter([
       {
         path: "/case-study/choc-hackathon",
         Component: CaseStudyCareBridge,
+      },
+      {
+        path: "/case-study/reddit-redesign",
+        Component: CaseStudyReddit,
       },
       {
         path: "/process",
