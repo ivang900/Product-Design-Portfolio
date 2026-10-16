@@ -9,6 +9,7 @@ import nexusDashboardImage from "../../assets/73d84cc564eda8a3adc0efffb2726d2808
 import codecClubImage from "../../assets/codec-club-hub.png";
 import careBridgeImage from "../../assets/carebridge-cover.png";
 import aiCoreCover from "../../assets/aicore/landing-v3-final.png";
+import redditCover from "../../assets/reddit/affinity-final.png";
 
 interface Project {
   id: string;
@@ -23,17 +24,17 @@ const projects: Project[] = [
     id: "ai-core",
     title: "AI Core",
     description:
-      "Product owner and designer for AI Core, an internal AI platform live in production. I redesigned the UI by sketching screens on paper, then iterating assisted by the Claude Code CLI, leveraging React to redesign the existing screens against patterns people already know from ChatGPT and Claude.",
+      "Product owner and designer for AI Core, an internal AI platform live in production. Over my summer 2026 internship I redesigned the UI by sketching screens on paper, then iterating assisted by the Claude Code CLI, leveraging React to redesign the existing screens against patterns people already know from ChatGPT and Claude.",
     image: aiCoreCover,
-    tags: ["AI in my process", "UI/UX Design", "Hand Wireframing", "React", "Claude Code", "Internship in progress"],
+    tags: ["UI/UX Design", "Hand Wireframing", "React", "Claude Code", "Internship · Summer 2026"],
   },
   {
-    id: "choc-hackathon",
-    title: "CareBridge: From Discharge Plan to Recovery Plan",
+    id: "reddit-redesign",
+    title: "Reddit Redesign: Finding CS Help on r/UCI",
     description:
-      "A high-risk transition made safe and easy. — CHOC Research Pediatric and Lifespan Data Science Conference Hackathon Winner.",
-    image: careBridgeImage,
-    tags: ["Multi-Disciplinary Teamwork", "AI Tooling", "User-Centered Design", "Prototyping"],
+      "UCI CS students trust Reddit for honest advice but struggle to find it. We interviewed students, built a persona, and redesigned r/UCI around topic-and-tag filtering and accessibility fixes, then usability-tested the prototype.",
+    image: redditCover,
+    tags: ["User Interviews", "Affinity Mapping", "Persona", "Figma Prototyping", "Usability Testing"],
   },
   {
     id: "faster-ai-real-estate",
@@ -66,6 +67,14 @@ const projects: Project[] = [
       "During our time as Healthcare Administrative Interns, my team and I were tasked with conducting research, identifying a pain point, and proposing a solution. This showcases our presentation pitched to Administrative Board Members. It also showcases my early adoption of AI tools in 2025.",
     image: nexusDashboardImage,
     tags: ["Interviewing", "Data Analysis", "Presentational Skills", "Veo3", "Gemini"],
+  },
+  {
+    id: "choc-hackathon",
+    title: "CareBridge: From Discharge Plan to Recovery Plan",
+    description:
+      "A high-risk transition made safe and easy. — CHOC Research Pediatric and Lifespan Data Science Conference Hackathon Winner.",
+    image: careBridgeImage,
+    tags: ["Multi-Disciplinary Teamwork", "AI Tooling", "User-Centered Design", "Prototyping"],
   },
   // {
   //   id: "workflow-automation-suite",

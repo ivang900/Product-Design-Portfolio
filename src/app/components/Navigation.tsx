@@ -37,11 +37,21 @@ export function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Left Side - Name */}
-          <div className="flex items-center">
+          <Link
+            to="/"
+            onClick={() => {
+              setMobileMenuOpen(false);
+              if (location.pathname === "/") {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }
+            }}
+            className="flex items-center hover:opacity-80 transition-opacity"
+            aria-label="Ivan Gonzalez, go to home"
+          >
             <span className="font-medium text-[#0A0A0A]">Ivan Gonzalez</span>
             <span className="mx-2 text-[#565656]">|</span>
             <span className="text-[1.05rem] text-[#242424]">Product Designer & Developer</span>
-          </div>
+          </Link>
 
           {/* Desktop Navigation - Right Side */}
           <div className="hidden md:flex items-center space-x-8">
